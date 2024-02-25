@@ -1,0 +1,91 @@
+body {
+  overflow-x: hidden;
+}
+
+#LandingPage {
+  width: 100%;
+  height: 100vh;
+  background: url("./Images/service5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#LandingPage > div p {
+  width: 30%;
+}
+#LandingPage > div h1 {
+  font-size: 450%;
+  margin: 10px;
+}
+#LandingPage > div h2 {
+  font-size: 300%;
+}
+#LandingPage > div {
+  height: 100%;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5%;
+  justify-content: center;
+  background: url("./Images/landingpsPrimarybg.png");
+  background-repeat: no-repeat;
+  background-size: 110vh;
+  background-position: left;
+}
+
+#HomeServices {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  justify-content: center;
+  box-shadow: inset 0 0 1000px 400px rgba(0, 0, 0, 0.9);
+
+  gap: 35%;
+  transition: all 0.3s ease;
+  font-family: "Nunito Sans", sans-serif;
+  overflow: hidden !important;
+}
+
+.info-tab h1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+.info-tab h2 {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.info-tab {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 1s ease;
+}
+.intro-nav {
+  width: 25%;
+  list-style: none;
+  transition: all 1s ease;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+}
+.intro-nav li {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  transition: all 200ms ease-in-out;
+}
+.intro-nav li:hover {
+  border-bottom: 4px solid #da0e29;
+  font-size: 1.7em;
+}
