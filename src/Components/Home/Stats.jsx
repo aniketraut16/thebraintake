@@ -1,0 +1,76 @@
+import React, { useState, useEffect, useRef } from "react";
+
+function Stats() {
+  const [stat1, setStat1] = useState(0);
+  const [stat2, setStat2] = useState(0);
+  const [stat3, setStat3] = useState(0);
+  const finalStat1 = 300000;
+  const finalStat2 = 90;
+  const finalStat3 = 90693;
+
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        const interval = setInterval(() => {
+          setStat1((prevCount) => {
+            if (prevCount >= finalStat1) {
+              clearInterval(interval);
+              return finalStat1;
+            }
+            return prevCount + finalStat1 / 1000;
+          });
+
+          setStat2((prevCount) => {
+            if (prevCount >= finalStat2) {
+              clearInterval(interval);
+              return finalStat2;
+            }
+            return prevCount + finalStat2 / 1000;
+          });
+
+          setStat3((prevCount) => {
+            if (prevCount >= finalStat3) {
+              clearInterval(interval);
+              return finalStat3;
+            }
+            return prevCount + finalStat3 / 1000;
+          });
+        }, 1);
+
+        // Clean up the interval when the component unmounts or the section goes out of viewport
+        return () => clearInterval(interval);
+      }
+    });
+
+    observer.observe(statsRef.current);
+
+    return () => observer.unobserve(statsRef.current);
+  }, []);
+
+  return (
+    <div id="Stats" ref={statsRef}>
+      <h1>
+        The Brain Take has helped thousands of people in spite of a mental
+        health challenge.
+      </h1>
+      <div id="stats-cards">
+        <div>
+          <h1>{Math.floor(stat1)}</h1>
+          <h2>Hope-filled contacts annually</h2>
+        </div>
+        <div>
+          <h1>{Math.floor(stat2)}</h1>
+          <h2>Support Groups in over 12 countries</h2>
+        </div>
+        <div>
+          <h1>{Math.floor(stat3)}</h1>
+          <h2>Podcast downloads from over 39 countries</h2>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Stats;

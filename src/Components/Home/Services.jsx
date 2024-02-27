@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import serviceimg1 from "./Images/service1.webp";
-import serviceimg2 from "./Images/service2.jpg";
+import serviceimg2 from "./Images/service2.png";
 import serviceimg3 from "./Images/service3.jpg";
 import serviceimg4 from "./Images/service4.jpg";
 import serviceimg5 from "./Images/service5.jpg";
@@ -36,13 +36,13 @@ function HomeServices() {
     {
       title: "Career Counselling",
       bg: serviceimg5,
-      info: "Career counseling is a specialized service designed to assist individuals in navigating the complex process of career exploration and decision-making. By leveraging a combination of assessments, discussions, and personalized guidance, career counselors work collaboratively with individuals to identify their unique strengths, interests, and aptitudes. Through this process, individuals gain valuable insight into potential career pathways that align with their skills, values, and aspirations. Career counseling facilitates informed decision-making by providing individuals with the resources and support needed to explore various career options, set meaningful goals, and develop actionable plans for achieving success in their chosen field. Ultimately, career counseling empowers individuals to make informed career choices that are well-suited to their individual preferences and capabilities, fostering long-term satisfaction and fulfillment in their professional lives.",
+      info: "Career counseling is a specialized service designed to assist individuals in navigating the complex process of career exploration and decision-making. By leveraging a combination of assessments, discussions, and personalized guidance, career counselors work collaboratively with individuals to identify their unique strengths, interests, and aptitudes. Through this process, individuals gain valuable insight into potential career pathways that align with their skills, values, and aspirations. Career counseling facilitates informed decision-making by providing individuals with the resources and support needed to explore various career options.",
       active: false,
     },
     {
       title: "Anger Management",
       bg: serviceimg6,
-      info: "Anger management counseling is a therapeutic process designed to help individuals explore and address issues related to their anger & its effects.",
+      info: "Anger management counseling is a comprehensive therapeutic approach meticulously crafted to guide individuals through an introspective journey aimed at understanding and effectively managing the complexities of their anger and its pervasive ramifications. Through this structured process, participants are empowered to delve deep into the multifaceted layers of their emotional landscape, unraveling the intricate interplay of triggers, underlying emotions, and behavioral responses associated with anger.",
       active: false,
     },
   ]);
@@ -132,8 +132,8 @@ function HomeServices() {
             style={
               section.active
                 ? {
-                    fontSize: "1.7em",
-                    borderBottom: "4px solid  #da0e29",
+                    fontSize: "25px",
+                    borderBottom: "2px solid  #da0e29",
                   }
                 : {}
             }
