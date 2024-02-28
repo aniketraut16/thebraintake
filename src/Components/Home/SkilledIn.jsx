@@ -5,16 +5,26 @@ import skilledimg1 from "./Images/skilledIn2.jpg";
 function SkilledIn() {
   const skilledInRef = useRef(null);
   const [isimgonscreen, setisimgonscreen] = useState(false);
+  const [isOnbottom, setisOnbottom] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const skilledIn = skilledInRef.current;
       const rect = skilledIn.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      if (rect.top < 0 && rect.top > -1 * (rect.height - windowHeight)) {
+      console.log(rect.top);
+      if (
+        rect.top <= 0 &&
+        rect.top >= -1 * (rect.height - windowHeight) - 0.1 * windowHeight
+      ) {
         setisimgonscreen(true);
       } else {
         setisimgonscreen(false);
+      }
+      if (rect.top < -1 * (rect.height - windowHeight)) {
+        setisOnbottom(true);
+      } else {
+        setisOnbottom(false);
       }
     };
 
@@ -164,7 +174,11 @@ function SkilledIn() {
         alt=""
         id="skilledimg"
         style={
-          isimgonscreen ? { position: "fixed", top: "15vh", right: "15vw" } : {}
+          isimgonscreen
+            ? { position: "fixed", top: "15vh", right: "15vw" }
+            : isOnbottom
+            ? { alignSelf: "flex-end" }
+            : {}
         }
       />
     </div>

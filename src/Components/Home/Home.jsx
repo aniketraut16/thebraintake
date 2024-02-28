@@ -5,6 +5,7 @@ import LandingPage from "./LandingPage";
 import TheBrainTake from "./TheBrainTake";
 import Stats from "./Stats";
 import SkilledIn from "./SkilledIn";
+import BrainTakeForWho from "./BrainTakeForWho";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <HomeServices />
       <Stats />
       <SkilledIn />
+      <BrainTakeForWho />
     </>
   );
 }

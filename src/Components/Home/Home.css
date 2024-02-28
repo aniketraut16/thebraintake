@@ -12,7 +12,7 @@ body {
 #LandingPage {
   width: 100vw;
   overflow: hidden;
-  height: 105vh;
+  height: 110vh;
   /* background: url("./Images/service5.jpg"); */
   background-size: cover;
   background-position: center;
@@ -82,8 +82,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  text-transform: uppercase;
   font-size: 35px;
+  text-transform: uppercase;
   margin: 15px 0px;
 }
 .info-tab {
@@ -161,6 +161,7 @@ body {
   justify-content: center;
   height: 70vh;
   background: url("./Images/statsections.jpg") center/cover;
+  /* background: linear-gradient(to bottom, black, #efebee); */
 }
 
 #stats-cards h1 {
@@ -192,6 +193,7 @@ body {
 #skilledimg {
   width: 40vw;
   object-fit: contain;
+  height: 60vh;
 }
 
 .side-text {
@@ -222,13 +224,13 @@ body {
 }
 
 .know-more-btn {
-  background: #a536f3;
+  background: black;
   width: fit-content;
   text-decoration: none;
   margin-top: 2em;
   color: white;
   font-family: inherit;
-  padding: 0.35em;
+  padding: 0.2em;
   padding-left: 1.2em;
   font-size: 17px;
   font-weight: 500;
@@ -237,7 +239,7 @@ body {
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  box-shadow: inset 0 0 1.6em -0.6em rgba(0, 0, 0, 0.776);
   overflow: hidden;
   position: relative;
   height: 2.8em;
@@ -246,7 +248,7 @@ body {
 }
 
 .know-more-btn .icon {
-  background: white;
+  background: black;
   margin-left: 1em;
   position: absolute;
   display: flex;
@@ -255,7 +257,7 @@ body {
   height: 2.2em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  box-shadow: inset 0 0 1.6em -0.6em rgba(0, 0, 0, 0.776);
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -267,7 +269,7 @@ body {
 .know-more-btn .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: #7b52b9;
+  color: white;
 }
 
 .know-more-btn:hover .icon svg {
@@ -286,4 +288,43 @@ body {
   margin: 0%;
   font-size: 1.5em;
   padding: 0%;
+}
+
+#BrainTakeForWho {
+  width: 100%;
+  padding: 10vh 10%;
+  background-color: #f6f49d;
+}
+.btfw-navbae,
+.btfw-infotab {
+  margin-bottom: 5em;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btfw-navbae span:hover {
+  border-top: 4px solid #a536f3;
+}
+.btfw-navbae span {
+  border-top: 4px solid black;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 23%;
+  padding-top: 10px;
+}
+
+.btfw-infotab > * {
+  width: 45%;
+  border-radius: 15px;
+}
+.btfw-infotab h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3em;
 }
