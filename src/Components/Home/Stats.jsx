@@ -50,12 +50,12 @@ function Stats() {
   }, []);
 
   return (
-    <div id="Stats" ref={statsRef}>
+    <div id="Stats">
       <h1>
         The Brain Take has helped thousands of people in spite of a mental
         health challenge.
       </h1>
-      <div id="stats-cards">
+      <div id="stats-cards" ref={statsRef}>
         <div>
           <h1>{Math.floor(stat1)}</h1>
           <h2>Hope-filled contacts annually</h2>

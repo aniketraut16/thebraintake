@@ -6,9 +6,8 @@ function TheBrainTake() {
     <div id="wecare">
       <img src={thebraintake} alt="" />
       <p>
-        From meticulous audits to strategic tax planning and insightful
-        consulting, we pave the way for your financial success with precision
-        and expertise.
+        Get the gear that never gives up Gain a new perspective on stressful
+        situations and build skills to manage your stress.
       </p>
     </div>
   );
