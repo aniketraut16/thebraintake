@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import bg1 from "./Images/service1.webp";
-import bg2 from "./Images/service2.png";
-import bg3 from "./Images/service3.jpg";
+// import bg1 from "../../../public "/assets/Images/Home/service1.webp";
+// import bg2 from "../../../public "/assets/Images/Home/service2.png ";
+// import bg3 from "../../../public "/assets/Images/Home/service3.jpg ";
 
 function LandingPage() {
   const titleArr = ["Mental Health", "Physical Health", "Other Health"];
@@ -10,7 +10,11 @@ function LandingPage() {
     "Praesentium voluptas eaque tempora velit consectetur, enim illo saepe provident error. Inventore sit non dolorem nostrum quis eum, eius aperiam ipsum dignissimos architecto perferendis ratione magni! Vitae natus voluptatum labore. In, iste eaque? Vero amet eveniet laboriosam esse. Quod, incidunt ut ducimus, impedit consequatur recusandae officia aliquid perferendis ipsa iste fugit, dolorem saepe commodi quam quasi dolores placeat. Molestias, temporibus.",
     "Unde tenetur nam, in eaque ducimus adipisci inventore distinctio incidunt ipsum dicta velit, ratione autem nostrum neque blanditiis praesentium, fuga magni. Ipsum ad ducimus autem nihil fugiat repudiandae? Sequi, porro! Expedita dolorem unde suscipit, aliquid saepe illum repellat ratione id pariatur, iusto porro assumenda, totam cum! Inventore recusandae earum incidunt veniam quo, sequi ipsum repudiandae ab iste vel ad illo.",
   ];
-  const bgArr = [bg1, bg2, bg3];
+  const bgArr = [
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service1.webp`,
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service2.png`,
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service3.jpg`,
+  ];
 
   const [index, setIndex] = useState(0);
 

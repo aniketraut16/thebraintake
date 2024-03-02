@@ -1,22 +1,39 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import skilledimg1 from "./Images/skilledIn2.jpg";
+// import skilledimg1 from "../../../public/assets/Images/Home/skilledIn2.jpg";
 
 function SkilledIn() {
+  const [index, setindex] = useState(0);
   const skilledInRef = useRef(null);
   const [isimgonscreen, setisimgonscreen] = useState(false);
   const [isOnbottom, setisOnbottom] = useState(false);
+  const imgArr = [
+    "/assets/Images/Home/skilledIn1.jpg",
+    "/assets/Images/Home/skilledIn2.jpg",
+    "/assets/Images/Home/skilledIn3.jpg",
+    "/assets/Images/Home/skilledIn4.jpg",
+    "/assets/Images/Home/skilledIn5.jpg",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
       const skilledIn = skilledInRef.current;
       const rect = skilledIn.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      console.log(rect.top);
-      if (
-        rect.top <= 0 &&
-        rect.top >= -1 * (rect.height - windowHeight) - 0.1 * windowHeight
-      ) {
+      const maxBottompoint =
+        -1 * (rect.height - windowHeight) - 0.1 * windowHeight;
+      if (rect.top <= 0 && rect.top >= maxBottompoint) {
+        if (rect.top > (maxBottompoint / 5) * 1) {
+          setindex(0);
+        } else if (rect.top > (maxBottompoint / 5) * 2) {
+          setindex(1);
+        } else if (rect.top > (maxBottompoint / 5) * 3) {
+          setindex(2);
+        } else if (rect.top > (maxBottompoint / 5) * 4) {
+          setindex(3);
+        } else if (rect.top > (maxBottompoint / 5) * 5) {
+          setindex(4);
+        }
         setisimgonscreen(true);
       } else {
         setisimgonscreen(false);
@@ -170,12 +187,12 @@ function SkilledIn() {
         </div>
       </div>
       <img
-        src={skilledimg1}
+        src={process.env.PUBLIC_URL + imgArr[index]}
         alt=""
         id="skilledimg"
         style={
           isimgonscreen
-            ? { position: "fixed", top: "15vh", right: "15vw" }
+            ? { position: "fixed", top: "15vh", right: "12vw" }
             : isOnbottom
             ? { alignSelf: "flex-end" }
             : {}

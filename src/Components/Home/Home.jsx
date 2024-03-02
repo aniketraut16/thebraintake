@@ -6,6 +6,8 @@ import TheBrainTake from "./TheBrainTake";
 import Stats from "./Stats";
 import SkilledIn from "./SkilledIn";
 import BrainTakeForWho from "./BrainTakeForWho";
+import Testimonial from "./Testimonial";
+import Acheivements from "./Acheivements";
 
 function Home() {
   return (
@@ -16,6 +18,8 @@ function Home() {
       <Stats />
       <SkilledIn />
       <BrainTakeForWho />
+      <Acheivements />
+      <Testimonial />
     </>
   );
 }

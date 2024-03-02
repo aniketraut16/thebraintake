@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import img1 from "./Images/service2.png";
-import img2 from "./Images/service3.jpg";
-import img3 from "./Images/service4.jpg";
-import img4 from "./Images/service5.jpg";
+// import img1 from "../../../public "/assets/Images/Home/service2.png";
+// import img2 from "../../../public "/assets/Images/Home/service3.jpg";
+// import img3 from "../../../public "/assets/Images/Home/service4.jpg";
+// import img4 from "../../../public "/assets/Images/Home/service5.jpg";
 import { Link } from "react-router-dom";
 
 function BrainTakeForWho() {
@@ -25,7 +25,12 @@ function BrainTakeForWho() {
     "In the nexus between these realms lie patients encountering unexplained medical symptoms, fibromyalgia, chronic pain, and similar conditions, seeking solutions that remain elusive. Our holistic care approach transcends mere medication, aiming to restore everyday activities and enhance overall life quality for individuals facing these complex challenges.",
     "Memory loss, mood disorders, anxiety, and progressive neurological decline commonly accompany the aging brain. Our interdisciplinary approach transcends conventional medicine, blending modern scientific advancements with ancient wisdom. This allows us to craft personalized plans tailored to each patient's unique needs, ensuring comprehensive care and holistic support.",
   ];
-  const imgArr = [img1, img2, img3, img4];
+  const imgArr = [
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service2.png`,
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service3.jpg`,
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service4.jpg`,
+    `${process.env.PUBLIC_URL}/assets/Images/Home/service5.jpg`,
+  ];
   const extLinkArr = ["#", "#", "#", "#"];
 
   return (
