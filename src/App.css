@@ -1,0 +1,255 @@
+/* ===== Scrollbar CSS ===== */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #625f5f7b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8d32ce;
+  border-radius: 30px;
+  border: none;
+}
+
+#Navbar {
+  width: 100%;
+  z-index: 10;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.543);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#Navbar img {
+  height: 13vh;
+}
+#Navbar > div {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+#Navbar > div ul {
+  display: flex;
+  padding: 1em 0px;
+  margin: 0%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  justify-content: space-between;
+}
+.upperdiv {
+  justify-content: flex-end !important;
+  gap: 5%;
+  border-bottom: 2px solid #8d32ce;
+}
+
+#dropdown > div a {
+  color: black;
+  text-decoration: none;
+}
+#dropdown > div {
+  width: 50%;
+  margin: 1em 25%;
+  display: grid;
+  gap: 15px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+}
+#dropdown {
+  background-color: white;
+  position: fixed;
+  top: 15vh;
+  width: 100%;
+  z-index: 11;
+}
+
+#emptyArea {
+  width: 100%;
+  position: fixed;
+  top: 20vh;
+  height: 80vh;
+  z-index: 10;
+}
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.3rem;
+  padding-inline: 1.25rem;
+  background-color: #8d32ce;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+#newletter {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid grey;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#newletter #lhs > span {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  padding: 3px;
+  height: 2.5em;
+  border: 2px solid grey;
+  background-color: #efebee;
+  border-radius: 5px;
+}
+#newletter #lhs > span button {
+  background-color: #a536f3;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+#newletter #lhs > span input {
+  border: none;
+  font-size: 1.1em;
+  outline: none;
+  background: none;
+}
+#newletter #lhs > * {
+  width: 30em;
+  /* border: 1px solid black; */
+}
+#newletter #lhs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#newletter #rhs,
+#newletter #lhs {
+  width: 45%;
+  padding: 5vh 0px;
+}
+
+#newletter #rhs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#newletter #rhs a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+  height: 1em;
+  width: 1em;
+  padding: 10px;
+  font-size: 1.4em;
+  border-radius: 50px;
+  background-color: #a536f3;
+}
+
+#lower-footer-div h4 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  color: #a536f3;
+  padding-top: 1em;
+}
+#lower-footer-div {
+  display: flex;
+  border-bottom: 1px solid grey;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em 10%;
+}
+#lower-footer-div div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+}
+#lower-footer-div div a {
+  text-decoration: none;
+  color: black;
+}
+
+#right-reserved ul a {
+  color: black;
+  text-decoration: none;
+}
+#right-reserved ul {
+  display: flex;
+  gap: 10px;
+}
+#right-reserved {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,0 +1,367 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  const [section, setsection] = useState("aboutus");
+  const [isDropdownActive, setisDropdownActive] = useState(false);
+  const DropdownArrow = () => {
+    return <i className="fa-solid fa-angle-down"></i>;
+  };
+
+  const dropdownData = {
+    aboutus: [
+      {
+        content: "AboutUs1",
+        ref: "#",
+      },
+      {
+        content: "AboutUs2",
+        ref: "#",
+      },
+      {
+        content: "AboutUs3",
+        ref: "#",
+      },
+      {
+        content: "AboutUs4",
+        ref: "#",
+      },
+      {
+        content: "AboutUs5",
+        ref: "#",
+      },
+      {
+        content: "AboutUs6",
+        ref: "#",
+      },
+      {
+        content: "AboutUs7",
+        ref: "#",
+      },
+      {
+        content: "AboutUs8",
+        ref: "#",
+      },
+      {
+        content: "AboutUs9",
+        ref: "#",
+      },
+      {
+        content: "AboutUs0",
+        ref: "#",
+      },
+    ],
+    uniqueFeatures: [
+      {
+        content: "Unique Feature 1",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 2",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 3",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 4",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 5",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 6",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 7",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 8",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 9",
+        ref: "#",
+      },
+      {
+        content: "Unique Feature 0",
+        ref: "#",
+      },
+    ],
+    services: [
+      {
+        content: "Service 1",
+        ref: "#",
+      },
+      {
+        content: "Service 2",
+        ref: "#",
+      },
+      {
+        content: "Service 3",
+        ref: "#",
+      },
+      {
+        content: "Service 4",
+        ref: "#",
+      },
+      {
+        content: "Service 5",
+        ref: "#",
+      },
+      {
+        content: "Service 6",
+        ref: "#",
+      },
+      {
+        content: "Service 7",
+        ref: "#",
+      },
+      {
+        content: "Service 8",
+        ref: "#",
+      },
+      {
+        content: "Service 9",
+        ref: "#",
+      },
+      {
+        content: "Service 0",
+        ref: "#",
+      },
+    ],
+    testimonial: [
+      {
+        content: "Testimonial 1",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 2",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 3",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 4",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 5",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 6",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 7",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 8",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 9",
+        ref: "#",
+      },
+      {
+        content: "Testimonial 0",
+        ref: "#",
+      },
+    ],
+    caseStudies: [
+      {
+        content: "Case Study 1",
+        ref: "#",
+      },
+      {
+        content: "Case Study 2",
+        ref: "#",
+      },
+      {
+        content: "Case Study 3",
+        ref: "#",
+      },
+      {
+        content: "Case Study 4",
+        ref: "#",
+      },
+      {
+        content: "Case Study 5",
+        ref: "#",
+      },
+      {
+        content: "Case Study 6",
+        ref: "#",
+      },
+      {
+        content: "Case Study 7",
+        ref: "#",
+      },
+      {
+        content: "Case Study 8",
+        ref: "#",
+      },
+      {
+        content: "Case Study 9",
+        ref: "#",
+      },
+      {
+        content: "Case Study 0",
+        ref: "#",
+      },
+    ],
+    blogs: [
+      {
+        content: "Blog 1",
+        ref: "#",
+      },
+      {
+        content: "Blog 2",
+        ref: "#",
+      },
+      {
+        content: "Blog 3",
+        ref: "#",
+      },
+      {
+        content: "Blog 4",
+        ref: "#",
+      },
+      {
+        content: "Blog 5",
+        ref: "#",
+      },
+      {
+        content: "Blog 6",
+        ref: "#",
+      },
+      {
+        content: "Blog 7",
+        ref: "#",
+      },
+      {
+        content: "Blog 8",
+        ref: "#",
+      },
+      {
+        content: "Blog 9",
+        ref: "#",
+      },
+      {
+        content: "Blog 0",
+        ref: "#",
+      },
+    ],
+  };
+
+  const DropDownContent = (section) => {
+    return dropdownData[section].map((menu, index) => (
+      <Link to={menu.ref}>{menu.content}</Link>
+    ));
+  };
+  return (
+    <>
+      <div id="Navbar">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
+          alt=""
+        />
+        <div>
+          <ul className="upperdiv">
+            <button class="button">
+              Book Appointment
+              <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path
+                  clip-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+
+            <a>
+              <i className="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a>Shop</a>
+            <a>Contact Us</a>
+          </ul>
+          <ul className="lowerdiv">
+            <a
+              onMouseEnter={() => {
+                setsection("aboutus");
+                setisDropdownActive(true);
+              }}
+            >
+              About Us <DropdownArrow />{" "}
+            </a>
+            <a
+              onMouseEnter={() => {
+                setsection("uniqueFeatures");
+                setisDropdownActive(true);
+              }}
+            >
+              Unique features <DropdownArrow />{" "}
+            </a>
+            <a
+              onMouseEnter={() => {
+                setsection("services");
+                setisDropdownActive(true);
+              }}
+            >
+              Services <DropdownArrow />{" "}
+            </a>
+            <a
+              onMouseEnter={() => {
+                setsection("testimonial");
+                setisDropdownActive(true);
+              }}
+            >
+              Testimonials <DropdownArrow />{" "}
+            </a>
+            <a
+              onMouseEnter={() => {
+                setsection("caseStudies");
+                setisDropdownActive(true);
+              }}
+            >
+              Case Studies <DropdownArrow />{" "}
+            </a>
+            <a
+              onMouseEnter={() => {
+                setsection("blogs");
+                setisDropdownActive(true);
+              }}
+            >
+              Blogs <DropdownArrow />{" "}
+            </a>
+            <i className="fa-solid fa-magnifying-glass"></i>{" "}
+          </ul>
+        </div>
+      </div>
+      {isDropdownActive ? (
+        <div id="dropdown">
+          <div>{DropDownContent(section)}</div>
+        </div>
+      ) : (
+        <></>
+      )}
+      <div
+        id="emptyArea"
+        onMouseEnter={() => {
+          setisDropdownActive(false);
+        }}
+      ></div>
+    </>
+  );
+}
+
+export default Navbar;

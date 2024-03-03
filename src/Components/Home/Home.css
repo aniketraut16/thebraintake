@@ -538,7 +538,7 @@ body {
   border-bottom: 1px solid black;
 }
 .one-acheivement {
-  width: 22em;
+  width: calc(33% - 2em);
   display: flex;
   flex-direction: column;
 }
