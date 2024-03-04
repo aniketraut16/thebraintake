@@ -77,6 +77,10 @@ function Footer() {
         </div>
       </div>
       <div id="right-reserved">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
+          alt=""
+        />
         <p>
           © {new Date().getFullYear()} The Health Take . All rights reserved.
         </p>

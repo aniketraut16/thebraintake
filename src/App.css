@@ -19,7 +19,7 @@
   width: 100%;
   z-index: 10;
   height: 15vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.543);
   display: flex;
@@ -35,7 +35,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-#Navbar > div ul {
+#Navbar > div .upperdiv,
+#Navbar > div .lowerdiv {
   display: flex;
   padding: 1em 0px;
   margin: 0%;
@@ -44,10 +45,52 @@
   color: white;
   justify-content: space-between;
 }
+#Navbar > div .lowerdiv img {
+  display: none;
+}
 .upperdiv {
   justify-content: flex-end !important;
   gap: 5%;
   border-bottom: 2px solid #8d32ce;
+}
+
+.lowerscrolled > img {
+  height: 8.5vh !important;
+  margin-right: auto;
+  margin-left: 10%;
+}
+.lowerscrolled > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.lowerscrolled {
+  width: 99vw;
+  margin: 0%;
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3%;
+  background-color: white;
+  box-shadow: 1px 1px 20px black;
+  color: black;
+  padding-right: 3%;
+  animation: navbarAnimation 500ms ease;
+}
+
+@keyframes navbarAnimation {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #dropdown > div a {
@@ -66,18 +109,10 @@
 #dropdown {
   background-color: white;
   position: fixed;
-  top: 15vh;
   width: 100%;
   z-index: 11;
 }
 
-#emptyArea {
-  width: 100%;
-  position: fixed;
-  top: 20vh;
-  height: 80vh;
-  z-index: 10;
-}
 .button {
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -248,8 +283,75 @@
   gap: 10px;
 }
 #right-reserved {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+#right-reserved img {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 7vh;
+}
+
+.ttb-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+}
+
+.ttb-svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.ttb-svgIcon path {
+  fill: white;
+}
+
+.ttb-button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #a536f3;
+  align-items: center;
+}
+
+.ttb-button:hover .ttb-svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.ttb-button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.ttb-button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
 }

@@ -1,9 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import BottomtoTopBtn from "./BottomtoTopBtn";
 
 function Navbar() {
   const [section, setsection] = useState("aboutus");
   const [isDropdownActive, setisDropdownActive] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 70) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const DropdownArrow = () => {
     return <i className="fa-solid fa-angle-down"></i>;
   };
@@ -294,7 +313,11 @@ function Navbar() {
             <a>Shop</a>
             <a>Contact Us</a>
           </ul>
-          <ul className="lowerdiv">
+          <ul className={isScrolled ? "lowerscrolled" : "lowerdiv"}>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
+              alt=""
+            />
             <a
               onMouseEnter={() => {
                 setsection("aboutus");
@@ -348,18 +371,19 @@ function Navbar() {
         </div>
       </div>
       {isDropdownActive ? (
-        <div id="dropdown">
+        <div
+          id="dropdown"
+          style={isScrolled ? { top: "9vh" } : { top: "15vh" }}
+          onMouseLeave={() => {
+            setisDropdownActive(!isDropdownActive);
+          }}
+        >
           <div>{DropDownContent(section)}</div>
         </div>
       ) : (
         <></>
       )}
-      <div
-        id="emptyArea"
-        onMouseEnter={() => {
-          setisDropdownActive(false);
-        }}
-      ></div>
+      {isScrolled ? <BottomtoTopBtn /> : <></>}
     </>
   );
 }
