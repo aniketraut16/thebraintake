@@ -82,7 +82,7 @@ function Footer() {
           alt=""
         />
         <p>
-          © {new Date().getFullYear()} The Health Take . All rights reserved.
+          © {new Date().getFullYear()} The Brain Take . All rights reserved.
         </p>
         <ul>
           <Link>Private Policy</Link>

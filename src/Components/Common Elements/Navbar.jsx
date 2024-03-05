@@ -306,12 +306,12 @@ function Navbar() {
                 ></path>
               </svg>
             </button>
-
             <a>
               <i className="fa-solid fa-cart-shopping"></i>
             </a>
             <a>Shop</a>
             <a>Contact Us</a>
+            <i className="fa-solid fa-magnifying-glass"></i>{" "}
           </ul>
           <ul className={isScrolled ? "lowerscrolled" : "lowerdiv"}>
             <img
@@ -366,19 +366,18 @@ function Navbar() {
             >
               Blogs <DropdownArrow />{" "}
             </a>
-            <i className="fa-solid fa-magnifying-glass"></i>{" "}
           </ul>
         </div>
       </div>
       {isDropdownActive ? (
         <div
           id="dropdown"
-          style={isScrolled ? { top: "9vh" } : { top: "15vh" }}
+          style={isScrolled ? { top: "9vh" } : { top: "18vh" }}
           onMouseLeave={() => {
             setisDropdownActive(!isDropdownActive);
           }}
         >
-          <div>{DropDownContent(section)}</div>
+          <ul className="level1dd">{DropDownContent(section)}</ul>
         </div>
       ) : (
         <></>

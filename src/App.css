@@ -16,19 +16,34 @@
 }
 
 #Navbar {
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   z-index: 10;
-  height: 15vh;
+  height: 18vh;
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.543);
+  background-color: rgba(0, 0, 0, 0.143);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-#Navbar img {
+#Navbar a {
+  border-bottom: 5px solid #eb7e2400;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+#Navbar a:hover {
+  border-bottom: 5px solid #a536f3;
+}
+
+#Navbar > img {
   height: 13vh;
+  transform: scale(1.32) translateY(4%);
 }
 #Navbar > div {
   width: 50%;
@@ -39,6 +54,7 @@
 #Navbar > div .lowerdiv {
   display: flex;
   padding: 1em 0px;
+  font-size: 16px;
   margin: 0%;
   align-items: center;
   justify-content: center;
@@ -67,11 +83,13 @@
   gap: 3px;
 }
 .lowerscrolled {
-  width: 99vw;
+  width: 100vw;
+  overflow: hidden;
   margin: 0%;
   height: 9vh;
   position: fixed;
   top: 0;
+  font-size: 16px;
   right: 0;
   display: flex;
   align-items: center;
@@ -92,7 +110,7 @@
     transform: translateY(0px);
   }
 }
-
+/* 
 #dropdown > div a {
   color: black;
   text-decoration: none;
@@ -105,12 +123,44 @@
 
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5px;
-}
+} */
 #dropdown {
   background-color: white;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   z-index: 11;
+}
+
+#dropdown .level1dd {
+  display: flex;
+  /* position: relative;
+  left: 32%; */
+  flex-direction: column;
+  width: 33%;
+  z-index: 12;
+}
+
+#dropdown .level1dd > a {
+  color: black;
+  width: 100%;
+
+  text-decoration: none;
+  border-top: 1px solid #2e2e38;
+  padding: 8px 11px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 7px solid #eb7e2400;
+  border-bottom: 1px solid #2e2e38;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#dropdown .level1dd > a:hover {
+  background-color: #4b4b4b26;
+  border-left: 7px solid #a536f3;
 }
 
 .button {
@@ -119,7 +169,7 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.3rem;
   padding-inline: 1.25rem;
-  background-color: #8d32ce;
+  background-color: #501a77;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -261,7 +311,7 @@
   display: flex;
   border-bottom: 1px solid grey;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   padding: 1em 10%;
 }
 #lower-footer-div div {
@@ -312,8 +362,8 @@
   transition-duration: 0.3s;
   overflow: hidden;
   position: fixed;
-  bottom: 3vh;
-  right: 3vh;
+  bottom: 3%;
+  right: 3%;
 }
 
 .ttb-svgIcon {
@@ -329,7 +379,7 @@
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
-  background-color: #a536f3;
+  background-color: #501a77;
   align-items: center;
 }
 

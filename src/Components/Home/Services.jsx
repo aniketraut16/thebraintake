@@ -110,8 +110,8 @@ function HomeServices() {
     >
       <div className="info-tab" ref={infoTabRef}>
         <h1>
-          <i className="fa-solid fa-industry"></i>
-          {"  "}OUR INTRODUCTION
+          <i className="fa-solid fa-hand-holding-medical"></i> {"  "}OUR
+          SERVICES
         </h1>
         {sections.map((section, index) => (
           <React.Fragment key={index}>

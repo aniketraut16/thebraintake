@@ -192,7 +192,7 @@ function SkilledIn() {
         id="skilledimg"
         style={
           isimgonscreen
-            ? { position: "fixed", top: "15vh", right: "12vw" }
+            ? { position: "fixed", top: "15vh", right: "9vw" }
             : isOnbottom
             ? { alignSelf: "flex-end" }
             : {}
