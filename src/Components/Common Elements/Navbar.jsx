@@ -295,7 +295,12 @@ function Navbar() {
           alt=""
         />
         <div>
-          <ul className="upperdiv">
+          <ul
+            className="upperdiv"
+            onMouseEnter={() => {
+              setisDropdownActive(false);
+            }}
+          >
             <button class="button">
               Book Appointment
               <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
