@@ -57,6 +57,7 @@ function SkilledIn() {
             <h1 id="specilizedIn">We are Specialized in...</h1>
             Adult Psychology
           </h1>
+          <img src={imgArr[0]} alt="" className="mobile-view-photo" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             facere quia unde impedit ipsa ullam. Vel tempore consequuntur
@@ -83,6 +84,8 @@ function SkilledIn() {
         </div>
         <div id="skill2">
           <h1> Child And Adult Psychology</h1>
+          <img src={imgArr[1]} alt="" className="mobile-view-photo" />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             facere quia unde impedit ipsa ullam. Vel tempore consequuntur
@@ -109,6 +112,8 @@ function SkilledIn() {
         </div>
         <div id="skill3">
           <h1> Geriatric Psychology</h1>
+          <img src={imgArr[2]} alt="" className="mobile-view-photo" />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             facere quia unde impedit ipsa ullam. Vel tempore consequuntur
@@ -135,6 +140,8 @@ function SkilledIn() {
         </div>
         <div id="skill4">
           <h1> Memory Management</h1>
+          <img src={imgArr[3]} alt="" className="mobile-view-photo" />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             facere quia unde impedit ipsa ullam. Vel tempore consequuntur
@@ -161,6 +168,8 @@ function SkilledIn() {
         </div>
         <div id="skill5">
           <h1> Psychosexual Disorders</h1>
+          <img src={imgArr[4]} alt="" className="mobile-view-photo" />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             facere quia unde impedit ipsa ullam. Vel tempore consequuntur

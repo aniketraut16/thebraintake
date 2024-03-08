@@ -12,9 +12,9 @@ body {
 }
 
 #LandingPage {
+  height: 110vh;
   width: 100vw;
   overflow: hidden;
-  height: 110vh;
   background-size: cover;
   background-position: center;
 }
@@ -22,12 +22,12 @@ body {
   width: 30%;
 }
 #LandingPage > div h1 {
+  font-size: 450%;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 450%;
-  margin: 10px;
+  /* margin: 10px; */
 }
 #LandingPage > div h2 {
   font-size: 300%;
@@ -38,6 +38,7 @@ body {
   font-variation-settings: "slnt" 0;
 }
 #LandingPage > div {
+  box-shadow: inset 0 0 1000px 250px rgba(0, 0, 0, 0.9);
   height: 100%;
   color: white;
   width: 100%;
@@ -46,7 +47,6 @@ body {
   align-items: flex-start;
   padding-left: 5%;
   justify-content: center;
-  box-shadow: inset 0 0 1000px 250px rgba(0, 0, 0, 0.9);
 
   /* background: url("/public/assets/Images/Home/landingpsPrimarybg.png");
   background-repeat: no-repeat;
@@ -55,13 +55,13 @@ body {
 }
 
 #HomeServices {
+  gap: 20%;
+  box-shadow: inset 0 0 1000px 350px rgba(0, 0, 0, 0.9);
   display: flex;
   min-height: 100vh;
   color: white;
   background-size: cover;
   justify-content: center;
-  box-shadow: inset 0 0 1000px 400px rgba(0, 0, 0, 0.9);
-  gap: 20%;
   transition: all 0.3s ease;
   font-family: "Nunito Sans", sans-serif;
   overflow: hidden !important;
@@ -78,7 +78,8 @@ body {
   text-transform: uppercase;
 }
 .info-tab p {
-  width: 60%;
+  width: 65%;
+  font-size: 1.2em;
 }
 .info-tab h2 {
   font-family: "Playfair Display", serif;
@@ -118,7 +119,7 @@ body {
   transition: all 200ms ease-in-out;
 }
 .intro-nav li:hover {
-  border-bottom: 2px solid #a536f3;
+  border-bottom: 2px solid #501a77;
   font-size: 25px;
 }
 
@@ -155,15 +156,14 @@ body {
   text-align: center;
 }
 #Stats {
+  height: 70vh;
   width: 100%;
   box-shadow: 10px -40px 40px -10px rgba(0, 0, 0, 0.783);
-
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
   background: url("/public/assets/Images/Home/statsections.jpg") center/cover;
   /* background: linear-gradient(to bottom, black, #efebee); */
 }
@@ -199,7 +199,9 @@ body {
   object-fit: contain;
   height: 60vh;
 }
-
+.mobile-view-photo {
+  display: none;
+}
 .side-text {
   width: 30vw;
   border-left: 1px solid black;
@@ -310,7 +312,7 @@ body {
 }
 
 .btfw-navbae span:hover {
-  border-top: 4px solid #a536f3;
+  border-top: 4px solid #501a77;
 }
 .btfw-navbae span {
   border-top: 4px solid black;
@@ -349,18 +351,20 @@ body {
 
 .Testimonial {
   max-width: 124rem;
-  background-color: #a536f3;
+  /* background-color: #501a77;
+   */
+  background: linear-gradient(to center, #1a0129, #360050);
   margin: 0 auto;
 }
 
 .heading {
+  margin-left: 10%;
   padding: 5vh 0;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 3.5rem;
-  margin-left: 10%;
 }
 
 .swiper_container {
@@ -382,17 +386,17 @@ body {
   filter: blur(0px);
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .swiper_container {
     height: 47rem;
   }
   .swiper-slide {
     width: 90% !important;
-    /* margin: auto 0em !important; */
+    margin: auto 0em !important;
 
     height: 36rem !important;
   }
-}
+} */
 
 .swiper-slide img {
   width: 50px;
@@ -561,3 +565,178 @@ body {
 .one-special-acheivement img {
   width: 60%;
 }
+
+@media screen and (max-width: 800px) {
+  /* LANDING PAGE */
+
+  #LandingPage > div p {
+    width: 90%;
+  }
+  #LandingPage > div h2 {
+    font-size: 250%;
+    margin: 10px 0px;
+  }
+  #LandingPage > div h1 {
+    font-size: 350%;
+    margin: 10px 0px;
+  }
+  #LandingPage > div {
+    box-shadow: inset 0 0 1000px 175px rgba(0, 0, 0, 0.9);
+  }
+  #LandingPage {
+    height: 100vh;
+  }
+  /* WE CARE SECTION */
+
+  #wecare img {
+    width: 90%;
+  }
+  #wecare p {
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  /* OUR SERVICES */
+  .info-tab {
+    display: none;
+  }
+  .intro-nav {
+    width: 90%;
+    align-items: center;
+    padding: 0%;
+  }
+
+  /* STATS */
+
+  #Stats > h1 {
+    width: 90%;
+    font-size: 2.5em;
+  }
+  #stats-cards {
+    flex-direction: column;
+    width: 90%;
+    gap: 0em;
+  }
+  #stats-cards div {
+    width: 100%;
+    text-align: center;
+  }
+  #Stats {
+    height: fit-content;
+    padding: 1em 0px;
+  }
+  #stats-cards h1 {
+    font-size: 3em;
+    margin: 10px 0px;
+  }
+  #skilledimg {
+    width: 100vw;
+    object-fit: contain;
+    height: 30vh;
+    position: sticky;
+    top: 0%;
+  }
+
+  /* Skilled IN */
+
+  #SkilledIn {
+    flex-direction: column-reverse;
+  }
+
+  #skilledimg {
+    display: none;
+  }
+
+  .side-text {
+    width: 100%;
+  }
+  .side-text p {
+    width: 90%;
+  }
+  .mobile-view-photo {
+    display: block;
+  }
+  .side-text > div {
+    height: fit-content;
+  }
+
+  .btfw-infotab {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .btfw-navbae {
+    padding: 10px;
+    width: 90%;
+    background-color: #d8c281a5;
+    border-radius: 10px;
+    overflow-x: scroll;
+  }
+  .btfw-navbae::-webkit-scrollbar {
+    display: none;
+  }
+
+  .btfw-navbae span:hover {
+    border-top: 2px solid #501a77;
+  }
+  .btfw-navbae span {
+    border-top: 2px solid black;
+
+    font-size: 16px;
+
+    min-width: fit-content;
+  }
+
+  .btfw-infotab > * {
+    width: 90%;
+    border-radius: 15px;
+  }
+  .btfw-infotab h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  /* Achievemetns */
+  #Acheivements > h1 {
+    font-size: 250%;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  #Acheivements {
+    padding: 2em 5%;
+  }
+
+  .one-acheivement {
+    width: 100%;
+  }
+  .one-special-acheivement {
+    width: 100%;
+
+    margin-bottom: 0em;
+    flex-direction: column;
+  }
+  .one-special-acheivement img {
+    width: 100%;
+  }
+  .one-special-acheivement p {
+    font-size: 1.2em;
+    margin-right: 0em;
+  }
+  .slider-controler {
+    display: none;
+  }
+  .heading {
+    margin: 0%;
+    font-size: 250%;
+    margin-left: 5%;
+  }
+}
+/* @media screen and (max-width: 1550px) and (min-width: 970px) {
+  .info-tab {
+    width: 55% !important;
+  }
+} */

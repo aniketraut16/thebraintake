@@ -40,7 +40,7 @@ function BrainTakeForWho() {
           onClick={() => {
             setindex(0);
           }}
-          style={index === 0 ? { borderTopColor: "#a536f3" } : {}}
+          style={index === 0 ? { borderTopColor: "#501a77" } : {}}
         >
           The Brain Take for Children
         </span>
@@ -48,7 +48,7 @@ function BrainTakeForWho() {
           onClick={() => {
             setindex(1);
           }}
-          style={index === 1 ? { borderTopColor: "#a536f3" } : {}}
+          style={index === 1 ? { borderTopColor: "#501a77" } : {}}
         >
           The Brain Take for Adolescents
         </span>
@@ -56,7 +56,7 @@ function BrainTakeForWho() {
           onClick={() => {
             setindex(2);
           }}
-          style={index === 2 ? { borderTopColor: "#a536f3" } : {}}
+          style={index === 2 ? { borderTopColor: "#501a77" } : {}}
         >
           The Brain Take for Adults
         </span>
@@ -64,7 +64,7 @@ function BrainTakeForWho() {
           onClick={() => {
             setindex(3);
           }}
-          style={index === 3 ? { borderTopColor: "#a536f3" } : {}}
+          style={index === 3 ? { borderTopColor: "#501a77" } : {}}
         >
           The Brain Take for Elders
         </span>

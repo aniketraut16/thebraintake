@@ -112,7 +112,7 @@ function Testimonial() {
 
   return (
     <div className="Testimonial">
-      <h1 className="heading">Testimonial</h1>
+      <h1 className="heading">Testimonials</h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
