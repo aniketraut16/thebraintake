@@ -335,6 +335,9 @@ body {
   width: 45%;
   border-radius: 15px;
 }
+.btfw-infotab > img {
+  object-fit: cover;
+}
 .btfw-infotab h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -345,7 +348,7 @@ body {
 
 .Testimonial {
   max-width: 124rem;
-  background: linear-gradient(to center, #1a0129, #360050);
+  background-color: #2d9596;
   margin: 0 auto;
 }
 
@@ -416,7 +419,7 @@ body {
 
 .one-testimonial {
   width: 16em !important;
-  height: 46vh !important;
+  min-height: 46vh !important;
   display: flex;
   flex-direction: column;
   padding: 2vh 2em;

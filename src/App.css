@@ -14,6 +14,10 @@
   border-radius: 30px;
   border: none;
 }
+* {
+  margin: 0%;
+  padding: 0%;
+}
 
 #MobileNavbar {
   display: none;
@@ -56,8 +60,8 @@
 #Navbar > div .upperdiv,
 #Navbar > div .lowerdiv {
   display: flex;
-  padding: 1em 0px;
-  font-size: 20px;
+  padding: 1% 0px;
+  font-size: 18px;
   margin: 0%;
   align-items: center;
   justify-content: center;

@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Common Elements/Footer";
 import Navbar from "./Components/Common Elements/Navbar";
 import MobileNavbar from "./Components/Common Elements/MobileNavbar";
+import UniqueFeature from "./Components/Unique Features/UniqueFeature";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MobileNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/uniquefeature/:section" element={<UniqueFeature />} />
       </Routes>
       <Footer />
     </Router>
