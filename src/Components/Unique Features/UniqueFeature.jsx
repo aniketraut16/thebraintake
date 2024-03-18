@@ -14,8 +14,10 @@ function UniqueFeature() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.style.transform = "scale(1)";
+            entry.target.style.opacity = "1";
           } else {
             entry.target.style.transform = "scale(0.95)";
+            entry.target.style.opacity = "0";
           }
         });
       },
@@ -23,7 +25,10 @@ function UniqueFeature() {
     );
 
     observedElements.current.forEach((el) => {
-      observer.observe(el);
+      if (el) {
+        // Ensure element is valid before observing
+        observer.observe(el);
+      }
     });
 
     return () => {
@@ -31,42 +36,11 @@ function UniqueFeature() {
     };
   }, [sectionData]); // Ensure useEffect runs whenever sectionData changes
 
-  const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
-
-  useEffect(() => {
-    const video = videoRef.current;
-
-    const playVideo = () => {
-      if (video) {
-        video.play();
-        setPlaying(true);
-      }
-    };
-
-    const handleEnded = () => {
-      if (video) {
-        video.currentTime = 0; // Reset video to start
-        playVideo();
-      }
-    };
-
-    if (!playing) {
-      playVideo();
-    }
-
-    video.addEventListener("ended", handleEnded);
-
-    return () => {
-      video.removeEventListener("ended", handleEnded);
-    };
-  }, [playing]);
-
   return (
     <div id="UniqueFeature">
       <div
         className="breadcrumb"
-        ref={(el) => el && observedElements.current.push(el)} // Check if el exists before pushing
+        ref={(el) => el && observedElements.current.push(el)}
       >
         {sectionData?.breadcrumb}
       </div>
@@ -94,7 +68,7 @@ function UniqueFeature() {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  `/assets/Images/Unique Features/${sectionData?.s1img}` /* Ensure sectionData exists */
+                  `/assets/Images/Unique Features/${sectionData?.s1img}`
                 }
                 alt=""
               />
@@ -105,11 +79,17 @@ function UniqueFeature() {
       <div className="section2">
         <div>
           <div>
-            <h1>{sectionData.subtitle2}</h1>
-            <p>{sectionData.p21}</p>
-            <p>{sectionData.p22}</p>
+            <h1 ref={(el) => el && observedElements.current.push(el)}>
+              {sectionData.subtitle2}
+            </h1>
+            <p ref={(el) => el && observedElements.current.push(el)}>
+              {sectionData.p21}
+            </p>
+            <p ref={(el) => el && observedElements.current.push(el)}>
+              {sectionData.p22}
+            </p>
           </div>
-          <video ref={videoRef}>
+          <video controls ref={(el) => el && observedElements.current.push(el)}>
             <source
               src={
                 process.env.PUBLIC_URL +

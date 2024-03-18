@@ -515,24 +515,137 @@ function MobileNavbar() {
         <Link
           onClick={() => {
             setisBurgerActive(!isBurgerActive);
-
             setisLevel2Active(false);
           }}
-          to="/industries/overviewofindustries"
+          to="/uniquefeature/maritialcounselling"
         >
-          {" "}
-          Overview of Industries
+          Marital Counselling
         </Link>
         <Link
           onClick={() => {
             setisBurgerActive(!isBurgerActive);
-
             setisLevel2Active(false);
           }}
-          to="/industries/successtory"
+          to="/uniquefeature/premaritalcounseling"
         >
-          {" "}
-          Success Stories/ Case Studies /Testimonials
+          Pre-Marital Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/postmaritalcounselling"
+        >
+          Post-Marital Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/careercounseling"
+        >
+          Career Counselling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/anxietycounseling"
+        >
+          Anxiety Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/depressioncounseling"
+        >
+          Depression Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/insomniacounseling"
+        >
+          Insomnia/Sleep Problem Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/traumaticcounseling"
+        >
+          Traumatic Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/cbt"
+        >
+          Cognitive Behavioral Therapy
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/parentingcounselling"
+        >
+          Parenting Counselling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/familycounselling"
+        >
+          Family Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/childcounselling"
+        >
+          Child Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/groupcounselling"
+        >
+          Group Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/stressmanagementcounselling"
+        >
+          Stress Management Counseling
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+            setisLevel2Active(false);
+          }}
+          to="/uniquefeature/mentalhealthcounselling"
+        >
+          Mental Health Counseling
         </Link>
       </>
     );
@@ -615,7 +728,6 @@ function MobileNavbar() {
         <Link
           onClick={() => {
             setisBurgerActive(!isBurgerActive);
-
             setisLevel2Active(false);
           }}
           to="/aboutus/missionvisionvalues"
@@ -843,7 +955,7 @@ function MobileNavbar() {
         <span
           onClick={() => {
             setisLevel2Active(true);
-            handleNavHover(2);
+            handleNavHover(3);
           }}
         >
           Unique Features
@@ -851,7 +963,7 @@ function MobileNavbar() {
         <span
           onClick={() => {
             setisLevel2Active(true);
-            handleNavHover(3);
+            handleNavHover(2);
           }}
         >
           Services

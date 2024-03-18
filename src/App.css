@@ -48,9 +48,12 @@
   border-bottom: 5px solid #a536f3;
 }
 
-#Navbar > img {
+#Navbar > a > img {
   height: 13vh;
   transform: scale(1.32) translateY(4%);
+}
+#Navbar > a:hover {
+  border-bottom: 5px solid #aaaaaa00;
 }
 #Navbar > div {
   width: 50%;
@@ -65,7 +68,6 @@
   margin: 0%;
   align-items: center;
   justify-content: center;
-  color: white;
   justify-content: space-between;
 }
 #Navbar > div .lowerdiv img {
@@ -76,11 +78,13 @@
   gap: 5%;
   border-bottom: 2px solid #8d32ce;
 }
-
-.lowerscrolled > img {
-  height: 8.5vh !important;
+.lowerscrolled > .imglowerdiv {
   margin-right: auto;
   margin-left: 10%;
+}
+
+.lowerscrolled > a > img {
+  height: 8.5vh !important;
 }
 .lowerscrolled > a {
   height: 100%;

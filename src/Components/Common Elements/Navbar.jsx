@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import BottomtoTopBtn from "./BottomtoTopBtn";
 
 function Navbar() {
   const [section, setsection] = useState("aboutus");
   const [isDropdownActive, setisDropdownActive] = useState(false);
-
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -72,44 +73,64 @@ function Navbar() {
     ],
     uniqueFeatures: [
       {
-        content: "Unique Feature 1",
-        ref: "#",
+        content: "Marital Counselling",
+        ref: "/uniquefeature/maritialcounselling",
       },
       {
-        content: "Unique Feature 2",
-        ref: "#",
+        content: "Pre-Marital Counseling ",
+        ref: "/uniquefeature/premaritalcounseling",
       },
       {
-        content: "Unique Feature 3",
-        ref: "#",
+        content: "Post-Marital Counseling ",
+        ref: "/uniquefeature/postmaritalcounselling",
       },
       {
-        content: "Unique Feature 4",
-        ref: "#",
+        content: "Career Counselling",
+        ref: "/uniquefeature/careercounseling",
       },
       {
-        content: "Unique Feature 5",
-        ref: "#",
+        content: "Anxiety Counseling",
+        ref: "/uniquefeature/anxietycounseling",
       },
       {
-        content: "Unique Feature 6",
-        ref: "#",
+        content: "Depression Counseling",
+        ref: "/uniquefeature/depressioncounseling",
       },
       {
-        content: "Unique Feature 7",
-        ref: "#",
+        content: "Insomnia/Sleep Problem Counseling",
+        ref: "/uniquefeature/insomniacounseling",
       },
       {
-        content: "Unique Feature 8",
-        ref: "#",
+        content: "Traumatic Counseling",
+        ref: "/uniquefeature/traumaticcounseling",
       },
       {
-        content: "Unique Feature 9",
-        ref: "#",
+        content: "Cognitive Behavioral Therapy",
+        ref: "/uniquefeature/cbt",
       },
       {
-        content: "Unique Feature 0",
-        ref: "#",
+        content: "Parenting Counselling",
+        ref: "/uniquefeature/parentingcounselling",
+      },
+      {
+        content: "Family Counseling",
+        ref: "/uniquefeature/familycounselling",
+      },
+      {
+        content: "Child Counseling",
+        ref: "/uniquefeature/childcounselling",
+      },
+      {
+        content: "Group Counseling",
+        ref: "/uniquefeature/groupcounselling",
+      },
+      {
+        content: "Stress Management Counseling",
+        ref: "/uniquefeature/stressmanagementcounselling",
+      },
+      {
+        content: "Mental Health Counseling",
+        ref: "/uniquefeature/mentalhealthcounselling",
       },
     ],
     services: [
@@ -289,11 +310,19 @@ function Navbar() {
   };
   return (
     <>
-      <div id="Navbar">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
-          alt=""
-        />
+      <div
+        id="Navbar"
+        style={{
+          backgroundColor: `${location.pathname !== "/" ? "white" : ""}`,
+          color: `${location.pathname !== "/" ? "black" : "white"}`,
+        }}
+      >
+        <Link to="/">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
+            alt=""
+          />
+        </Link>
         <div>
           <ul
             className="upperdiv"
@@ -319,10 +348,12 @@ function Navbar() {
             <i className="fa-solid fa-magnifying-glass"></i>{" "}
           </ul>
           <ul className={isScrolled ? "lowerscrolled" : "lowerdiv"}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
-              alt=""
-            />
+            <Link to="/" className="imglowerdiv">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/Images/thebraintakeLogo.png`}
+                alt=""
+              />
+            </Link>
             <a
               onMouseEnter={() => {
                 setsection("aboutus");

@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 function BrainTakeForWho() {
   const [index, setindex] = useState(0);
   const titleArr = [
-    "The Brain Take for Children",
-    "The Brain Take for Adolescents",
-    "The Brain Take for Adults",
-    "The Brain Take for Elders",
+    "Psycortex for Children",
+    "Psycortex for Adolescents",
+    "Psycortex for Adults",
+    "Psycortex for Elders",
   ];
   const p1Arr = [
     'Neuropsychiatric disorders in children encompass a broad spectrum, spanning from developmental conditions like ADHD, Autistic Spectrum Disorder, and Epilepsy to acquired ones such as Anxiety, Depression, and post Head Injury conditions. Our integrative "Beyond Medication" approach ensures comprehensive care for the affected child and family, facilitating restoration, rehabilitation, and rejuvenation, marking a new chapter.',
@@ -20,8 +20,8 @@ function BrainTakeForWho() {
     "Neuropsychiatric disorders among the elderly frequently stem from degenerative brain conditions such as Alzheimer's dementia, Parkinson's disease, and various movement disorders. Additionally, progressive cerebrovascular disease often results in minor strokes that disrupt brain pathways. Mental health issues can also manifest in seniors due to declining health, disability, bereavement, and social isolation.",
   ];
   const p2Arr = [
-    "Family caregivers of children facing these challenges require support and guidance, along with a structured plan, all of which are integral components of our care process. Additionally, The Brain Take collaborates with the child's educational institution, whether it be a school, special school, junior college, or vocational center, to promote the holistic development of the affected child.",
-    "At The Brain Take, our comprehensive care approach extends beyond medication to cater to adolescents' distinct bio-psycho-social requirements, equipping them for the journey ahead. Additionally, our innovative utilization of multiple intelligences and positive psychology empowers young individuals by offering clarity regarding higher education and future career paths.",
+    "Family caregivers of children facing these challenges require support and guidance, along with a structured plan, all of which are integral components of our care process. Additionally, Psycortex collaborates with the child's educational institution, whether it be a school, special school, junior college, or vocational center, to promote the holistic development of the affected child.",
+    "At Psycortex, our comprehensive care approach extends beyond medication to cater to adolescents' distinct bio-psycho-social requirements, equipping them for the journey ahead. Additionally, our innovative utilization of multiple intelligences and positive psychology empowers young individuals by offering clarity regarding higher education and future career paths.",
     "In the nexus between these realms lie patients encountering unexplained medical symptoms, fibromyalgia, chronic pain, and similar conditions, seeking solutions that remain elusive. Our holistic care approach transcends mere medication, aiming to restore everyday activities and enhance overall life quality for individuals facing these complex challenges.",
     "Memory loss, mood disorders, anxiety, and progressive neurological decline commonly accompany the aging brain. Our interdisciplinary approach transcends conventional medicine, blending modern scientific advancements with ancient wisdom. This allows us to craft personalized plans tailored to each patient's unique needs, ensuring comprehensive care and holistic support.",
   ];
@@ -42,7 +42,7 @@ function BrainTakeForWho() {
           }}
           style={index === 0 ? { borderTopColor: "#501a77" } : {}}
         >
-          The Brain Take for Children
+          Psycortex for Children
         </span>
         <span
           onClick={() => {
@@ -50,7 +50,7 @@ function BrainTakeForWho() {
           }}
           style={index === 1 ? { borderTopColor: "#501a77" } : {}}
         >
-          The Brain Take for Adolescents
+          Psycortex for Adolescents
         </span>
         <span
           onClick={() => {
@@ -58,7 +58,7 @@ function BrainTakeForWho() {
           }}
           style={index === 2 ? { borderTopColor: "#501a77" } : {}}
         >
-          The Brain Take for Adults
+          Psycortex for Adults
         </span>
         <span
           onClick={() => {
@@ -66,7 +66,7 @@ function BrainTakeForWho() {
           }}
           style={index === 3 ? { borderTopColor: "#501a77" } : {}}
         >
-          The Brain Take for Elders
+          Psycortex for Elders
         </span>
       </div>
       <div className="btfw-infotab">
