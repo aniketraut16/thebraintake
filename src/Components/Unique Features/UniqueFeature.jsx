@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import jsonData from "./UniqueFeatures.json";
 import { useParams } from "react-router-dom";
 import "./UniqueFeatures.css";
@@ -34,7 +34,7 @@ function UniqueFeature() {
     return () => {
       observer.disconnect();
     };
-  }, [sectionData]); // Ensure useEffect runs whenever sectionData changes
+  }, []); // Ensure useEffect runs whenever sectionData changes
 
   return (
     <div id="UniqueFeature">

@@ -18,30 +18,33 @@ function SkilledIn() {
   useEffect(() => {
     const handleScroll = () => {
       const skilledIn = skilledInRef.current;
-      const rect = skilledIn.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const maxBottompoint =
-        -1 * (rect.height - windowHeight) - 0.1 * windowHeight;
-      if (rect.top <= 0 && rect.top >= maxBottompoint) {
-        if (rect.top > (maxBottompoint / 5) * 1) {
-          setindex(0);
-        } else if (rect.top > (maxBottompoint / 5) * 2) {
-          setindex(1);
-        } else if (rect.top > (maxBottompoint / 5) * 3) {
-          setindex(2);
-        } else if (rect.top > (maxBottompoint / 5) * 4) {
-          setindex(3);
-        } else if (rect.top > (maxBottompoint / 5) * 5) {
-          setindex(4);
+      if (skilledIn) {
+        // Perform a null check
+        const rect = skilledIn.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const maxBottompoint =
+          -1 * (rect.height - windowHeight) - 0.1 * windowHeight;
+        if (rect.top <= 0 && rect.top >= maxBottompoint) {
+          if (rect.top > (maxBottompoint / 5) * 1) {
+            setindex(0);
+          } else if (rect.top > (maxBottompoint / 5) * 2) {
+            setindex(1);
+          } else if (rect.top > (maxBottompoint / 5) * 3) {
+            setindex(2);
+          } else if (rect.top > (maxBottompoint / 5) * 4) {
+            setindex(3);
+          } else if (rect.top > (maxBottompoint / 5) * 5) {
+            setindex(4);
+          }
+          setisimgonscreen(true);
+        } else {
+          setisimgonscreen(false);
         }
-        setisimgonscreen(true);
-      } else {
-        setisimgonscreen(false);
-      }
-      if (rect.top < -1 * (rect.height - windowHeight)) {
-        setisOnbottom(true);
-      } else {
-        setisOnbottom(false);
+        if (rect.top < -1 * (rect.height - windowHeight)) {
+          setisOnbottom(true);
+        } else {
+          setisOnbottom(false);
+        }
       }
     };
 

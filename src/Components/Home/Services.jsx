@@ -46,47 +46,54 @@ function HomeServices() {
       active: false,
     },
   ]);
-
   const [isVisible, setIsVisible] = useState(false);
 
-  const infoTabRef = useRef(null);
-  const introNavRef = useRef(null);
+  // const infoTabRef = useRef(null);
+  // const introNavRef = useRef(null);
 
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.2,
-    };
-    const observer = new IntersectionObserver((entries) => {
-      setIsVisible(entries[0].isIntersecting);
-    }, options);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       setIsVisible(entries[0].isIntersecting);
+  //     },
+  //     { threshold: 0.2 }
+  //   );
 
-    if (infoTabRef.current && introNavRef.current) {
-      observer.observe(infoTabRef.current);
-      observer.observe(introNavRef.current);
-    }
+  //   const infoTabElement = infoTabRef.current;
+  //   const introNavElement = introNavRef.current;
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  //   if (infoTabElement && introNavElement) {
+  //     observer.observe(infoTabElement);
+  //     observer.observe(introNavElement);
+  //   }
 
-  useEffect(() => {
-    if (isVisible) {
-      const infoTabElement = infoTabRef.current;
-      const introNavElement = introNavRef.current;
+  //   return () => {
+  //     if (infoTabElement && introNavElement) {
+  //       observer.unobserve(infoTabElement);
+  //       observer.unobserve(introNavElement);
+  //     }
+  //   };
+  // }, []);
 
-      infoTabElement.style.transform = "translateX(0)";
-      introNavElement.style.transform = "translateX(0)";
-    } else {
-      const infoTabElement = infoTabRef.current;
-      const introNavElement = introNavRef.current;
+  // useEffect(() => {
+  //   if (isVisible) {
+  //     const infoTabElement = infoTabRef.current;
+  //     const introNavElement = introNavRef.current;
 
-      infoTabElement.style.transform = "translateX(-5em)";
-      introNavElement.style.transform = "translateX(5em)";
-    }
-  }, [isVisible]);
+  //     if (infoTabElement && introNavElement) {
+  //       infoTabElement.style.transform = "translateX(0)";
+  //       introNavElement.style.transform = "translateX(0)";
+  //     }
+  //   } else {
+  //     const infoTabElement = infoTabRef.current;
+  //     const introNavElement = introNavRef.current;
+
+  //     if (infoTabElement && introNavElement) {
+  //       infoTabElement.style.transform = "translateX(-5em)";
+  //       introNavElement.style.transform = "translateX(5em)";
+  //     }
+  //   }
+  // }, [isVisible]);
 
   const handleSectionHover = (index) => {
     const updatedSections = sections.map((section, i) => ({
@@ -108,7 +115,10 @@ function HomeServices() {
         backgroundPosition: "center",
       }}
     >
-      <div className="info-tab" ref={infoTabRef}>
+      <div
+        className="info-tab"
+        // ref={infoTabRef}
+      >
         <h1>
           <i className="fa-solid fa-hand-holding-medical"></i> {"  "}OUR
           SERVICES
@@ -125,7 +135,10 @@ function HomeServices() {
         ))}
       </div>
 
-      <ul className="intro-nav" ref={introNavRef}>
+      <ul
+        className="intro-nav"
+        // ref={introNavRef}
+      >
         {sections.map((section, index) => (
           <li
             key={index}

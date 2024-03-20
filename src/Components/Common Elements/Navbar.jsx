@@ -97,10 +97,6 @@ function Navbar() {
         ref: "/uniquefeature/depressioncounseling",
       },
       {
-        content: "Insomnia/Sleep Problem Counseling",
-        ref: "/uniquefeature/insomniacounseling",
-      },
-      {
         content: "Traumatic Counseling",
         ref: "/uniquefeature/traumaticcounseling",
       },
@@ -132,47 +128,39 @@ function Navbar() {
         content: "Mental Health Counseling",
         ref: "/uniquefeature/mentalhealthcounselling",
       },
+      {
+        content: "Insomnia/Sleep Problem Counseling",
+        ref: "/uniquefeature/insomniacounseling",
+      },
     ],
     services: [
       {
-        content: "Service 1",
+        content: "Psychological Counselling",
         ref: "#",
       },
       {
-        content: "Service 2",
-        ref: "#",
+        content: "Substance Abuse or Addiction Counselling",
+        ref: "/services/psychologicalcounselling/substanceabuseoraddictioncounselling",
       },
       {
-        content: "Service 3",
-        ref: "#",
+        content: "Interpersonal Psychotherapy",
+        ref: "/services/psychologicalcounselling/interpersonalpsychotherapy",
       },
       {
-        content: "Service 4",
-        ref: "#",
+        content: "Overthinking Counselling",
+        ref: "/services/psychologicalcounselling/overthinkingcounselling",
       },
       {
-        content: "Service 5",
-        ref: "#",
+        content: "Motivational Counselling",
+        ref: "/services/psychologicalcounselling/motivationalcounselling",
       },
       {
-        content: "Service 6",
-        ref: "#",
+        content: "Sex Counselling",
+        ref: "/services/psychologicalcounselling/sexcounselling",
       },
       {
-        content: "Service 7",
-        ref: "#",
-      },
-      {
-        content: "Service 8",
-        ref: "#",
-      },
-      {
-        content: "Service 9",
-        ref: "#",
-      },
-      {
-        content: "Service 0",
-        ref: "#",
+        content: "",
+        ref: "/services/psychologicalcounselling",
       },
     ],
     testimonial: [
@@ -305,7 +293,16 @@ function Navbar() {
 
   const DropDownContent = (section) => {
     return dropdownData[section].map((menu, index) => (
-      <Link to={menu.ref}>{menu.content}</Link>
+      <Link
+        to={menu.ref}
+        style={{
+          gridColumn: `${menu.ref === "#" ? "1 / span 3" : ""}`,
+          fontSize: `${menu.ref === "#" ? "1.2em" : ""}`,
+          fontWeight: `${menu.ref === "#" ? "bolder" : ""}`,
+        }}
+      >
+        {menu.content}
+      </Link>
     ));
   };
   return (
