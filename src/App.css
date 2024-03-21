@@ -1,5 +1,15 @@
 /* ===== Scrollbar CSS ===== */
 
+@keyframes componrntrenser {
+  0% {
+    transform: translateX(2%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "RelFont";
   src: url("/public/assets/Fonts/JioType-Light.woff2") format("woff2");
@@ -488,12 +498,11 @@
     overflow-y: auto;
     flex-direction: column;
   }
-  #mobNavL1 > span {
-    border-bottom: 1.5px solid #747480;
-  }
   #mobNavL1 > span,
   #mobNavL1 > a {
+    border-bottom: 1.5px solid #747480;
     width: 90%;
+    text-decoration: none;
     padding: 15px 10px;
     font-weight: bold;
     font-size: 1.7em;

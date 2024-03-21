@@ -7,6 +7,12 @@ function Services() {
   const { section, subsection } = useParams();
   const sectionData = jsonData[section][subsection];
   const observedElements = useRef([]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,6 +41,12 @@ function Services() {
       observer.disconnect();
     };
   }, []); // Ensure useEffect runs whenever sectionData changes
+
+  const randomImage = Math.floor(Math.random() * 5) + 1;
+  const imageUrl = `${
+    process.env.PUBLIC_URL
+  }/assets/Images/Services/${section}/img${randomImage}.jpg?${Date.now()}`;
+
   return (
     <div id="Services">
       <div className="breadcrumb">{sectionData.breadcrumb}</div>
@@ -55,10 +67,7 @@ function Services() {
       <div
         className="sec2"
         style={{
-          background: `url(${process.env.PUBLIC_URL}/assets/Images/Services/service2.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          background: `url(${imageUrl}) center / cover fixed`,
         }}
       >
         <div>
@@ -76,7 +85,17 @@ function Services() {
         </div>
       </div>
 
-      <div className="sec3">
+      <div
+        className="sec3"
+        style={{
+          backgroundColor:
+            section === "psychologicalcounselling"
+              ? "#0f1e6d"
+              : section === "sexologycounselling"
+              ? "#416d19"
+              : "#492e87",
+        }}
+      >
         <div>
           <h3 ref={(el) => el && observedElements.current.push(el)}>
             {sectionData.title +

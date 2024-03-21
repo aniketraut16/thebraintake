@@ -9,7 +9,7 @@ function TheBrainTake() {
         alt=""
       />
       <p>
-        Get the gear that never gives up Gain a new perspective on stressful
+        Get the gear that never gives up gain a new perspective on stressful
         situations and build skills to manage your stress.
       </p>
     </div>

@@ -1,5 +1,7 @@
 #UniqueFeature * {
   transition: all 500ms ease-in-out;
+
+  animation: componrntrenser 1.5s ease;
 }
 #UniqueFeature {
   width: 100%;
@@ -8,7 +10,7 @@
 }
 
 .breadcrumb {
-  width: 70%;
+  width: auto;
   padding: 10px 17%;
   font-size: 18px;
   background-color: #fff8e3;

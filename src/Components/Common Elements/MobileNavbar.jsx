@@ -50,421 +50,386 @@ function MobileNavbar() {
     return (
       <>
         <span className="accordion" onClick={handleAccordionClick}>
-          Legal Brand Protection
+          Psychological Counselling
         </span>
         <div className="accordion-content">
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/overview"
+            to="/services/psychologicalcounselling/substanceabuseoraddictioncounselling"
           >
-            {" "}
-            Overview{" "}
+            Substance Abuse or Addiction Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/ipregistration"
+            to="/services/psychologicalcounselling/interpersonalpsychotherapy"
           >
-            {" "}
-            IP Registration and Prosecution{" "}
+            Interpersonal Psychotherapy
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/ipaudits"
+            to="/services/psychologicalcounselling/overthinkingcounselling"
           >
-            {" "}
-            IP Audits, SC Audits, EM Audit, Security Audits{" "}
+            Overthinking Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/intellectualproperties"
+            to="/services/psychologicalcounselling/motivationalcounselling"
           >
-            {" "}
-            Intellectual Property{" "}
+            Motivational Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/confidentialinformation"
+            to="/services/psychologicalcounselling/sexcounselling"
           >
-            {" "}
-            Confidential Information and Trade Secrets{" "}
+            Sex Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/healthcareandregulations"
+            to="/services/psychologicalcounselling/personcenteredtherapy"
           >
-            {" "}
-            Healthcare and Regulatory Laws{" "}
+            Person Centered Therapy
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/mediaentertainmentandsportslaws"
+            to="/services/psychologicalcounselling/griefcounselling"
           >
-            {" "}
-            Media, Entertainment & Sports Laws{" "}
+            Grief Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/leagalbrandprotection/digitalanditlaw"
+            to="/services/psychologicalcounselling/dialecticalbehaviourcounselling"
           >
-            {" "}
-            Digital & IT Laws{" "}
+            Dialectical Behaviour Counselling
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/solutionfocusedbrieftherapy"
+          >
+            Solution-Focused Brief Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/narrativetherapy"
+          >
+            Narrative Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/rationalemotivetherapy"
+          >
+            Rational Emotive Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/emotionallyfocusedtherapy"
+          >
+            Emotionally Focused Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/playtherapy"
+          >
+            Play Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/arttherapy"
+          >
+            Art Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/rehabilitationcounselling"
+          >
+            Rehabilitation Counselling
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/humanisticpsychology"
+          >
+            Humanistic Psychology
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/psychologicalcounselling/gestalttherapy"
+          >
+            Gestalt Therapy
           </Link>
         </div>
         <span className="accordion" onClick={handleAccordionClick}>
-          Strategic Consulting
+          Sexology Counselling
         </span>
         <div className="accordion-content">
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/stratagicconsulting/overview"
+            to="/services/sexologycounselling/erectiledysfunction"
           >
-            Overview{" "}
+            Erectile Dysfunction
           </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/stratagicconsulting/comprehensivelegalandbusinessriskconsultancy"
-          >
-            Comprehensive Legal and Business Risk Consulting{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/stratagicconsulting/riskassesmentandmigrationplan"
-          >
-            Risk Assessments and Mitigation Plans{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/stratagicconsulting/customizedconsultingservice"
-          >
-            Customized Consulting Services{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/stratagicconsulting/chainsupplysecurityandintegratityprogram"
-          >
-            Supply Chain Security/Integrity Programs{" "}
-          </Link>
-        </div>
-
-        <span className="accordion" onClick={handleAccordionClick}>
-          Investigations & Due Diligence
-        </span>
-        <div className="accordion-content">
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/counterfeit"
-          >
-            Counterfeits
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/diversion"
-          >
-            Diversion
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/producttampering"
-          >
-            Product Tampering{" "}
-          </Link>
-          {/* <li>Due Diligence</li> */}
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/counterpartyduediligence"
-          >
-            Counter Party Due Diligence{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/seniormanagementduediligence"
-          >
-            Senior Management Due Diligence{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/integrityduediligence"
-          >
-            Integrity Due Diligence{" "}
-          </Link>
-          {/* <li>Theft Investigations </li> */}
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/facility"
-          >
-            Facility
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/intransit"
-          >
-            {" "}
-            In-Transit{" "}
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/digital"
-          >
-            {" "}
-            Digital{" "}
-          </Link>
-          {/* <li>KYC and Background Checks </li> */}
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/aml"
-          >
-            AML
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/kyc"
-          >
-            KYC
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/marketresearch"
-          >
-            Market Research (Primary and Secondary)
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/marketintelligence"
-          >
-            Market Intelligence Gathering{" "}
-          </Link>
-          {/* <li>Forensic Due Diligence</li> */}
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/cyberforensics"
-          >
-            Cyber Forensics
-          </Link>
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/investigationandduedilligence/informationsecurityandsystem"
-          >
-            Information Security and Systems{" "}
-          </Link>
-          {/* <li>Supply Chain Investigations </li> */}
 
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/investigationandduedilligence/sourceinvestigation"
+            to="/services/sexologycounselling/lowlibido"
           >
-            Source Investigations{" "}
+            Low Libido
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/lackofinterest"
+          >
+            Lack of Interest
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/prematureejaculation"
+          >
+            Premature Ejaculation
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/lowconfidence"
+          >
+            Low Confidence
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/lackofresponsetosexualstimulus"
+          >
+            Lack of Response to Sexual Stimulus
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/inabilitytoreachorgasm"
+          >
+            Inability to Reach Orgasm
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/excessivelibido"
+          >
+            Excessive Libido
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/distressingsexualthoughtsunwanted"
+          >
+            Distressing Sexual Thoughts Unwanted
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/inabilitytocontrolsexualbehaviour"
+          >
+            Inability to Control Sexual Behavior
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/issuesrelatingtosexualtrauma"
+          >
+            Issues relating to Sexual Trauma
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/somaticsextherapy"
+          >
+            Somatic Sex Therapy
+          </Link>
+
+          <Link
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+              setisLevel2Active(false);
+            }}
+            to="/services/sexologycounselling/pelvicfloorphysicaltherapy"
+          >
+            Pelvic Floor Physical Therapy
           </Link>
         </div>
 
         <span className="accordion" onClick={handleAccordionClick}>
-          Training
+          Psychological Testing
         </span>
         <div className="accordion-content">
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/traning/mlc"
+            to="/services/psychologicaltesting/basiccounselling"
           >
-            MLC
+            Basic Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/traning/iprinschool"
+            to="/services/psychologicaltesting/personalcounselling"
           >
-            IPR in Schools
+            Personal Counselling
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/services/traning/softskills"
+            to="/services/psychologicaltesting/dmittest"
           >
-            Soft Skills{" "}
+            DMIT Test
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/traning/overview"
+            to="/services/psychologicaltesting/psychometricassessment"
           >
-            {" "}
-            Overview
+            Psychometric Assessment
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/traning/lawenforcementagenciestraining"
+            to="/services/psychologicaltesting/careersuitabilitytest"
           >
-            {" "}
-            Law Enforcement Agencies (LEA) Training
+            Career Suitability Test
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/traning/customtraning"
+            to="/services/psychologicaltesting/intelligencebuildingprogram"
           >
-            {" "}
-            Customs Training
+            Intelligence Building Program
           </Link>
+
           <Link
             onClick={() => {
               setisBurgerActive(!isBurgerActive);
-
               setisLevel2Active(false);
             }}
-            to="/traning/externalandinternalstackholdertraning"
+            to="/services/psychologicaltesting/midbrainactivation"
           >
-            {" "}
-            External and Internal Stakeholder Training
-          </Link>
-        </div>
-
-        <span className="accordion" onClick={handleAccordionClick}>
-          Services for the Legal Industry
-        </span>
-        <div className="accordion-content">
-          <Link
-            onClick={() => {
-              setisBurgerActive(!isBurgerActive);
-
-              setisLevel2Active(false);
-            }}
-            to="/services/serviceforlegalindustries/tminuse"
-          >
-            TM In-Use
+            MidBrain Activation
           </Link>
         </div>
       </>
@@ -473,7 +438,7 @@ function MobileNavbar() {
 
   //Dropdown Contents
 
-  const SpanSuitDropdown = () => {
+  const AboutUsDropdown = () => {
     return (
       <>
         <Link
@@ -509,7 +474,7 @@ function MobileNavbar() {
       </>
     );
   };
-  const IndustriesServedDropdown = () => {
+  const UniqueFeatureDropdown = () => {
     return (
       <>
         <Link
@@ -650,216 +615,6 @@ function MobileNavbar() {
       </>
     );
   };
-  const ResourcesToolkitsDropdown = () => {
-    return (
-      <>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/resources/blogs"
-        >
-          {" "}
-          Blog/Articles/ Videos
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/resources/whitepaper"
-        >
-          {" "}
-          Whitepapers
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/resources/casestudy"
-        >
-          {" "}
-          Case Studies
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/resources/brandprotection"
-        >
-          {" "}
-          Brand Protection Toolkits{" "}
-        </Link>
-      </>
-    );
-  };
-  const AboutUsDropdown = () => {
-    return (
-      <>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/history"
-        >
-          {" "}
-          History
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/about/directorsmessage"
-        >
-          {" "}
-          Directors message
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/missionvisionvalues"
-        >
-          {" "}
-          Mission, Vision and Values
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/valuesandexpectations"
-        >
-          {" "}
-          Value Creation
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/fundingmodels"
-        >
-          {" "}
-          Funding Model
-        </Link>
-
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/strategy"
-        >
-          Strategy
-        </Link>
-
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/capability"
-        >
-          {" "}
-          Capability
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/bestpractices"
-        >
-          {" "}
-          Best Practices{" "}
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/leadershipteam"
-        >
-          {" "}
-          Leadership Team
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/organisationstructure"
-        >
-          {" "}
-          Organisation Structure{" "}
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/rolesandresponsibility"
-        >
-          {" "}
-          Roles and Responsibilities{" "}
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/governance"
-        >
-          {" "}
-          Governance
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/partnerships"
-        >
-          {" "}
-          Partnerships{" "}
-        </Link>
-        <Link
-          onClick={() => {
-            setisBurgerActive(!isBurgerActive);
-
-            setisLevel2Active(false);
-          }}
-          to="/aboutus/offices"
-        >
-          {" "}
-          Offices
-        </Link>
-      </>
-    );
-  };
 
   // Level 1 Handing Function
 
@@ -867,7 +622,7 @@ function MobileNavbar() {
     // Set dropdown content based on the hovered index
     switch (index) {
       case 1:
-        setDropdownContent(<SpanSuitDropdown />);
+        setDropdownContent(<AboutUsDropdown />);
         setisLevel2Active(true);
         break;
       case 2:
@@ -876,17 +631,7 @@ function MobileNavbar() {
 
         break;
       case 3:
-        setDropdownContent(<IndustriesServedDropdown />);
-        setisLevel2Active(true);
-
-        break;
-      case 4:
-        setDropdownContent(<ResourcesToolkitsDropdown />);
-        setisLevel2Active(true);
-
-        break;
-      case 5:
-        setDropdownContent(<AboutUsDropdown />);
+        setDropdownContent(<UniqueFeatureDropdown />);
         setisLevel2Active(true);
 
         break;
@@ -968,30 +713,30 @@ function MobileNavbar() {
         >
           Services
         </span>
-        <span
+        <Link
           onClick={() => {
-            setisLevel2Active(true);
-            handleNavHover(4);
+            setisBurgerActive(!isBurgerActive);
           }}
+          to="/testimonials"
         >
           Testimonials
-        </span>
-        <span
+        </Link>
+        <Link
           onClick={() => {
-            setisLevel2Active(true);
-            handleNavHover(5);
+            setisBurgerActive(!isBurgerActive);
           }}
+          to="/casestudies"
         >
           Case Studies
-        </span>
-        <span
+        </Link>
+        <Link
           onClick={() => {
-            setisLevel2Active(true);
-            handleNavHover(5);
+            setisBurgerActive(!isBurgerActive);
           }}
+          to="/blogs"
         >
           Blogs
-        </span>
+        </Link>
         <Link
           onClick={() => {
             setisBurgerActive(!isBurgerActive);

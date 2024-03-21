@@ -152,9 +152,175 @@ function Navbar() {
         ref: "/services/psychologicalcounselling/sexcounselling",
       },
       {
-        content: "",
+        content: "Person Centered Therapy",
         level: 2,
-        ref: "/services/psychologicalcounselling",
+        ref: "/services/psychologicalcounselling/personcenteredtherapy",
+      },
+      {
+        content: "Grief Counselling",
+        level: 2,
+        ref: "/services/psychologicalcounselling/griefcounselling",
+      },
+      {
+        content: "Dialectical Behaviour Counselling",
+        level: 2,
+        ref: "/services/psychologicalcounselling/dialecticalbehaviourcounselling",
+      },
+      {
+        content: "Solution-Focused Brief Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/solutionfocusedbrieftherapy",
+      },
+      {
+        content: "Narrative Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/narrativetherapy",
+      },
+      {
+        content: "Rational Emotive Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/rationalemotivetherapy",
+      },
+      {
+        content: "Emotionally Focused Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/emotionallyfocusedtherapy",
+      },
+      {
+        content: "Play Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/playtherapy",
+      },
+      {
+        content: "Art Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/arttherapy",
+      },
+      {
+        content: "Rehabilitation Counselling",
+        level: 2,
+        ref: "/services/psychologicalcounselling/rehabilitationcounselling",
+      },
+      {
+        content: "Humanistic Psychology",
+        level: 2,
+        ref: "/services/psychologicalcounselling/humanisticpsychology",
+      },
+      {
+        content: "Gestalt Therapy",
+        level: 2,
+        ref: "/services/psychologicalcounselling/gestalttherapy",
+      },
+      {
+        content: "Sexology Counselling",
+        level: 1,
+        ref: "#",
+      },
+
+      {
+        content: "Erectile Dysfunction",
+        level: 2,
+        ref: "/services/sexologycounselling/erectiledysfunction",
+      },
+      {
+        content: "Low Libido",
+        level: 2,
+        ref: "/services/sexologycounselling/lowlibido",
+      },
+      {
+        content: "Lack of Interest",
+        level: 2,
+        ref: "/services/sexologycounselling/lackofinterest",
+      },
+      {
+        content: "Premature Ejaculation",
+        level: 2,
+        ref: "/services/sexologycounselling/prematureejaculation",
+      },
+      {
+        content: "Low Confidence",
+        level: 2,
+        ref: "/services/sexologycounselling/lowconfidence",
+      },
+      {
+        content: "Lack of Response to Sexual Stimulus",
+        level: 2,
+        ref: "/services/sexologycounselling/lackofresponsetosexualstimulus",
+      },
+      {
+        content: "Inability to Reach Orgasm",
+        level: 2,
+        ref: "/services/sexologycounselling/inabilitytoreachorgasm",
+      },
+      {
+        content: "Excessive Libido",
+        level: 2,
+        ref: "/services/sexologycounselling/excessivelibido",
+      },
+      {
+        content: "Distressing Sexual Thoughts Unwanted",
+        level: 2,
+        ref: "/services/sexologycounselling/distressingsexualthoughtsunwanted",
+      },
+      {
+        content: "Inability to Control Sexual Behavior",
+        level: 2,
+        ref: "/services/sexologycounselling/inabilitytocontrolsexualbehaviour",
+      },
+      {
+        content: "Issues relating to Sexual Trauma",
+        level: 2,
+        ref: "/services/sexologycounselling/issuesrelatingtosexualtrauma",
+      },
+      {
+        content: "Somatic Sex Therapy",
+        level: 2,
+        ref: "/services/sexologycounselling/somaticsextherapy",
+      },
+      {
+        content: "Pelvic Floor Physical Therapy",
+        level: 2,
+        ref: "/services/sexologycounselling/pelvicfloorphysicaltherapy",
+      },
+      {
+        content: "Psychological Testing",
+        level: 1,
+        ref: "#",
+      },
+      {
+        content: "Basic Counselling",
+        level: 2,
+        ref: "/services/psychologicaltesting/basiccounselling",
+      },
+      {
+        content: "Personal Counselling",
+        level: 2,
+        ref: "/services/psychologicaltesting/personalcounselling",
+      },
+      {
+        content: "DMIT Test",
+        level: 2,
+        ref: "/services/psychologicaltesting/dmittest",
+      },
+      {
+        content: "Psychometric Assessment",
+        level: 2,
+        ref: "/services/psychologicaltesting/psychometricassessment",
+      },
+      {
+        content: "Career Suitability Test",
+        level: 2,
+        ref: "/services/psychologicaltesting/careersuitabilitytest",
+      },
+      {
+        content: "Intelligence Building Program",
+        level: 2,
+        ref: "/services/psychologicaltesting/intelligencebuildingprogram",
+      },
+      {
+        content: "MidBrain Activation",
+        level: 2,
+        ref: "/services/psychologicaltesting/midbrainactivation",
       },
     ],
   };
@@ -170,6 +336,9 @@ function Navbar() {
   const DropDownContent = React.memo(({ section }) => {
     return dropdownData[section].map((menu, index) => (
       <Link
+        onClick={() => {
+          setIsDropdownActive(false);
+        }}
         key={index}
         to={menu.ref}
         style={{

@@ -50,11 +50,41 @@ function Footer() {
           <Link> Partnerships </Link>
           <Link>Offices</Link>
         </div>
-        <h4>Span Suits</h4>
+        <h4>Unique Features</h4>
         <div>
-          <Link>Systems, Processes and Tools</Link>
-          <Link>Mobile APP</Link>
-          <Link>Brand Protection</Link>
+          <Link to="/uniquefeature/maritialcounselling">
+            Marital Counselling
+          </Link>
+          <Link to="/uniquefeature/premaritalcounseling">
+            Pre-Marital Counseling
+          </Link>
+          <Link to="/uniquefeature/postmaritalcounselling">
+            Post-Marital Counseling
+          </Link>
+          <Link to="/uniquefeature/careercounseling">Career Counselling</Link>
+          <Link to="/uniquefeature/anxietycounseling">Anxiety Counseling</Link>
+          <Link to="/uniquefeature/depressioncounseling">
+            Depression Counseling
+          </Link>
+          <Link to="/uniquefeature/insomniacounseling">
+            Insomnia/Sleep Problem Counseling
+          </Link>
+          <Link to="/uniquefeature/traumaticcounseling">
+            Traumatic Counseling
+          </Link>
+          <Link to="/uniquefeature/cbt">Cognitive Behavioral Therapy</Link>
+          <Link to="/uniquefeature/parentingcounselling">
+            Parenting Counselling
+          </Link>
+          <Link to="/uniquefeature/familycounselling">Family Counseling</Link>
+          <Link to="/uniquefeature/childcounselling">Child Counseling</Link>
+          <Link to="/uniquefeature/groupcounselling">Group Counseling</Link>
+          <Link to="/uniquefeature/stressmanagementcounselling">
+            Stress Management Counseling
+          </Link>
+          <Link to="/uniquefeature/mentalhealthcounselling">
+            Mental Health Counseling
+          </Link>
         </div>
         <h4>Industries Served</h4>
         <div>

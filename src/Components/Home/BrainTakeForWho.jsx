@@ -42,7 +42,8 @@ function BrainTakeForWho() {
           }}
           style={index === 0 ? { borderTopColor: "#501a77" } : {}}
         >
-          Psycortex for Children
+          {window.innerWidth > 500 ? "Psycortex for " : ""}
+          Children
         </span>
         <span
           onClick={() => {
@@ -50,7 +51,7 @@ function BrainTakeForWho() {
           }}
           style={index === 1 ? { borderTopColor: "#501a77" } : {}}
         >
-          Psycortex for Adolescents
+          {window.innerWidth > 500 ? "Psycortex for " : ""} Adolescents
         </span>
         <span
           onClick={() => {
@@ -58,7 +59,7 @@ function BrainTakeForWho() {
           }}
           style={index === 2 ? { borderTopColor: "#501a77" } : {}}
         >
-          Psycortex for Adults
+          {window.innerWidth > 500 ? "Psycortex for " : ""} Adults
         </span>
         <span
           onClick={() => {
@@ -66,7 +67,7 @@ function BrainTakeForWho() {
           }}
           style={index === 3 ? { borderTopColor: "#501a77" } : {}}
         >
-          Psycortex for Elders
+          {window.innerWidth > 500 ? "Psycortex for " : ""} Elders
         </span>
       </div>
       <div className="btfw-infotab">

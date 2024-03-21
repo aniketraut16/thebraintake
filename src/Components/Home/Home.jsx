@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import HomeServices from "./Services";
 import LandingPage from "./LandingPage";
@@ -10,6 +10,12 @@ import Testimonial from "./Testimonial";
 import Acheivements from "./Acheivements";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <LandingPage />

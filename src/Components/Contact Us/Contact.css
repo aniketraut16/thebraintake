@@ -3,6 +3,8 @@
 .Contact * {
   font-family: "Nunito Sans", sans-serif;
   transition: all 500ms ease;
+
+  animation: componrntrenser 1.5s ease;
 }
 .Contact {
   width: 100%;

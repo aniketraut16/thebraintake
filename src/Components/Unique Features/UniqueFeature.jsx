@@ -7,6 +7,12 @@ function UniqueFeature() {
   const { section } = useParams();
   const sectionData = jsonData[section];
   const observedElements = useRef([]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
