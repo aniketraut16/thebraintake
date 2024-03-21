@@ -1,5 +1,10 @@
 /* ===== Scrollbar CSS ===== */
 
+@font-face {
+  font-family: "RelFont";
+  src: url("/public/assets/Fonts/JioType-Light.woff2") format("woff2");
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 5px;
@@ -60,6 +65,9 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+#Navbar > div .lowerdiv a {
+  text-decoration: none;
+}
 #Navbar > div .upperdiv,
 #Navbar > div .lowerdiv {
   display: flex;
@@ -89,7 +97,9 @@
 .lowerscrolled > a {
   height: 100%;
   display: flex;
+  text-decoration: none;
   align-items: center;
+  color: black;
   justify-content: center;
   gap: 3px;
 }
@@ -130,6 +140,7 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+  font-family: "RelFont";
 }
 #dropdown > ul {
   width: 50%;

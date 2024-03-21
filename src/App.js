@@ -6,6 +6,7 @@ import Navbar from "./Components/Common Elements/Navbar";
 import MobileNavbar from "./Components/Common Elements/MobileNavbar";
 import UniqueFeature from "./Components/Unique Features/UniqueFeature";
 import Services from "./Components/Services/Services.jsx";
+import Testimonials from "./Components/Testimonials/Testimonials.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MobileNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/uniquefeature/:section" element={<UniqueFeature />} />
         <Route path="/services/:section/:subsection" element={<Services />} />
       </Routes>

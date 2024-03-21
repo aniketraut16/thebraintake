@@ -1,0 +1,112 @@
+.onetestimonial:hover {
+  transform: scale(1.1);
+}
+.onetestimonial {
+  width: 20em;
+  height: max-content;
+  display: flex;
+  padding: 10px;
+  color: #223645;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  margin: 25px;
+  align-items: center;
+  transition: all 500ms ease;
+}
+.onetestimonial i {
+  font-size: 4em;
+  align-self: flex-end;
+  color: #7853ce;
+}
+.onetestimonial img {
+  height: 9em;
+  width: 9em;
+  border: 5px solid #223645;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.onetestimonial p {
+  margin: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+.onetestimonial h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.9em;
+}
+.onetestimonial h4 {
+  font-family: "Relfont";
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+#Testimonials {
+  margin-top: 18vh;
+  background-color: #fff8e3;
+  width: 100%;
+}
+#Testimonials .header {
+  width: 100%;
+  min-height: 40vh;
+  background: url("/public/assets/Images/Testimonials/testimonialbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  box-shadow: inset 0 0 1000px 250px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+#Testimonials h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0px;
+  margin-top: 30px;
+  color: #223645;
+}
+
+#Testimonials h2 {
+  font-family: "Relfont";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.line {
+  margin: 0% 10px;
+  height: 3px;
+  width: 20px;
+  background-color: red;
+}
+
+.all-testimonialdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  background: none;
+}
+@media screen and (max-width: 500px) {
+  #Testimonials .header {
+    font-size: 3em;
+  }
+}

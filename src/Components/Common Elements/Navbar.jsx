@@ -1,32 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
-
 import BottomtoTopBtn from "./BottomtoTopBtn";
 
 function Navbar() {
-  const [section, setsection] = useState("aboutus");
-  const [isDropdownActive, setisDropdownActive] = useState(false);
-  const location = useLocation();
+  const [section, setSection] = useState("aboutus");
+  const [isDropdownActive, setIsDropdownActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 70) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(scrollPosition > 70);
     };
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const DropdownArrow = () => {
-    return <i className="fa-solid fa-angle-down"></i>;
-  };
 
   const dropdownData = {
     aboutus: [
@@ -291,27 +283,45 @@ function Navbar() {
     ],
   };
 
-  const DropDownContent = (section) => {
+  const handleMouseEnter = useCallback(
+    (sectionName) => {
+      setSection(sectionName);
+      setIsDropdownActive(true);
+    },
+    [setSection, setIsDropdownActive]
+  );
+
+  const handleMouseLeave = useCallback(() => {
+    setIsDropdownActive(false);
+  }, [setIsDropdownActive]);
+
+  const DropdownArrow = () => {
+    return <i className="fa-solid fa-angle-down"></i>;
+  };
+
+  const DropDownContent = React.memo(({ section }) => {
     return dropdownData[section].map((menu, index) => (
       <Link
+        key={index}
         to={menu.ref}
         style={{
-          gridColumn: `${menu.ref === "#" ? "1 / span 3" : ""}`,
-          fontSize: `${menu.ref === "#" ? "1.2em" : ""}`,
-          fontWeight: `${menu.ref === "#" ? "bolder" : ""}`,
+          gridColumn: menu.ref === "#" ? "1 / span 3" : "",
+          fontSize: menu.ref === "#" ? "1.2em" : "",
+          fontWeight: menu.ref === "#" ? "bolder" : "",
         }}
       >
         {menu.content}
       </Link>
     ));
-  };
+  });
+
   return (
     <>
       <div
         id="Navbar"
         style={{
-          backgroundColor: `${location.pathname !== "/" ? "white" : ""}`,
-          color: `${location.pathname !== "/" ? "black" : "white"}`,
+          backgroundColor: location.pathname !== "/" ? "white" : "",
+          color: location.pathname !== "/" ? "black" : "white",
         }}
       >
         <Link to="/">
@@ -321,12 +331,8 @@ function Navbar() {
           />
         </Link>
         <div>
-          <ul
-            className="upperdiv"
-            onMouseEnter={() => {
-              setisDropdownActive(false);
-            }}
-          >
+          <ul className="upperdiv" onMouseEnter={handleMouseLeave}>
+            {" "}
             <button class="button">
               Book Appointment
               <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
@@ -353,48 +359,53 @@ function Navbar() {
             </Link>
             <a
               onMouseEnter={() => {
-                setsection("aboutus");
-                setisDropdownActive(true);
+                setSection("aboutus");
+                setIsDropdownActive(true);
               }}
             >
               About Us <DropdownArrow />{" "}
             </a>
             <a
               onMouseEnter={() => {
-                setsection("uniqueFeatures");
-                setisDropdownActive(true);
+                setSection("uniqueFeatures");
+                setIsDropdownActive(true);
               }}
             >
               Unique features <DropdownArrow />{" "}
             </a>
             <a
               onMouseEnter={() => {
-                setsection("services");
-                setisDropdownActive(true);
+                setSection("services");
+                setIsDropdownActive(true);
               }}
             >
               Services <DropdownArrow />{" "}
             </a>
-            <a
-              onMouseEnter={() => {
-                setsection("testimonial");
-                setisDropdownActive(true);
+            <Link
+              to="/testimonials"
+              style={{
+                color:
+                  location.pathname === "/"
+                    ? isScrolled
+                      ? "black"
+                      : "white"
+                    : "black",
               }}
             >
-              Testimonials <DropdownArrow />{" "}
-            </a>
+              Testimonials
+            </Link>
             <a
               onMouseEnter={() => {
-                setsection("caseStudies");
-                setisDropdownActive(true);
+                setSection("caseStudies");
+                setIsDropdownActive(true);
               }}
             >
               Case Studies <DropdownArrow />{" "}
             </a>
             <a
               onMouseEnter={() => {
-                setsection("blogs");
-                setisDropdownActive(true);
+                setSection("blogs");
+                setIsDropdownActive(true);
               }}
             >
               Blogs <DropdownArrow />{" "}
@@ -402,20 +413,18 @@ function Navbar() {
           </ul>
         </div>
       </div>
-      {isDropdownActive ? (
+      {isDropdownActive && (
         <div
           id="dropdown"
           style={isScrolled ? { top: "9vh" } : { top: "18vh" }}
-          onMouseLeave={() => {
-            setisDropdownActive(!isDropdownActive);
-          }}
+          onMouseLeave={handleMouseLeave}
         >
-          <ul className="level1dd">{DropDownContent(section)}</ul>
+          <ul className="level1dd">
+            <DropDownContent section={section} />
+          </ul>
         </div>
-      ) : (
-        <></>
       )}
-      {isScrolled ? <BottomtoTopBtn /> : <></>}
+      {isScrolled ? <BottomtoTopBtn /> : null}
     </>
   );
 }

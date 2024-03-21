@@ -67,7 +67,10 @@ function Services() {
             {sectionData.quote}
             <i className="fa-solid fa-quote-right"></i>
           </span>
-          <span ref={(el) => el && observedElements.current.push(el)}>
+          <span
+            className="author"
+            ref={(el) => el && observedElements.current.push(el)}
+          >
             -{sectionData.writer}
           </span>
         </div>
