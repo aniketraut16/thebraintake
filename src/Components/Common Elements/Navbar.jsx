@@ -23,273 +23,141 @@ function Navbar() {
   const dropdownData = {
     aboutus: [
       {
-        content: "AboutUs1",
-        ref: "#",
+        content: "Our History",
+        ref: "#2",
+        level: 1,
       },
       {
-        content: "AboutUs2",
-        ref: "#",
+        content: "Mission Values and Vision",
+        ref: "#2",
+        level: 1,
       },
       {
-        content: "AboutUs3",
-        ref: "#",
+        content: "Our Team",
+        ref: "#2",
+        level: 1,
       },
       {
-        content: "AboutUs4",
-        ref: "#",
-      },
-      {
-        content: "AboutUs5",
-        ref: "#",
-      },
-      {
-        content: "AboutUs6",
-        ref: "#",
-      },
-      {
-        content: "AboutUs7",
-        ref: "#",
-      },
-      {
-        content: "AboutUs8",
-        ref: "#",
-      },
-      {
-        content: "AboutUs9",
-        ref: "#",
-      },
-      {
-        content: "AboutUs0",
-        ref: "#",
+        content: "Offices",
+        ref: "#2",
+        level: 1,
       },
     ],
     uniqueFeatures: [
       {
         content: "Marital Counselling",
         ref: "/uniquefeature/maritialcounselling",
+        level: 1,
       },
       {
         content: "Pre-Marital Counseling ",
         ref: "/uniquefeature/premaritalcounseling",
+        level: 1,
       },
       {
         content: "Post-Marital Counseling ",
         ref: "/uniquefeature/postmaritalcounselling",
+        level: 1,
       },
       {
         content: "Career Counselling",
         ref: "/uniquefeature/careercounseling",
+        level: 1,
       },
       {
         content: "Anxiety Counseling",
         ref: "/uniquefeature/anxietycounseling",
+        level: 1,
       },
       {
         content: "Depression Counseling",
         ref: "/uniquefeature/depressioncounseling",
+        level: 1,
       },
       {
         content: "Traumatic Counseling",
         ref: "/uniquefeature/traumaticcounseling",
+        level: 1,
       },
       {
         content: "Cognitive Behavioral Therapy",
+        level: 1,
         ref: "/uniquefeature/cbt",
       },
       {
         content: "Parenting Counselling",
         ref: "/uniquefeature/parentingcounselling",
+        level: 1,
       },
       {
         content: "Family Counseling",
         ref: "/uniquefeature/familycounselling",
+        level: 1,
       },
       {
         content: "Child Counseling",
         ref: "/uniquefeature/childcounselling",
+        level: 1,
       },
       {
         content: "Group Counseling",
         ref: "/uniquefeature/groupcounselling",
+        level: 1,
       },
       {
         content: "Stress Management Counseling",
         ref: "/uniquefeature/stressmanagementcounselling",
+        level: 1,
       },
       {
         content: "Mental Health Counseling",
         ref: "/uniquefeature/mentalhealthcounselling",
+        level: 1,
       },
       {
         content: "Insomnia/Sleep Problem Counseling",
         ref: "/uniquefeature/insomniacounseling",
+        level: 1,
       },
     ],
     services: [
       {
         content: "Psychological Counselling",
+        level: 1,
         ref: "#",
       },
       {
         content: "Substance Abuse or Addiction Counselling",
+        level: 2,
         ref: "/services/psychologicalcounselling/substanceabuseoraddictioncounselling",
       },
       {
         content: "Interpersonal Psychotherapy",
+        level: 2,
         ref: "/services/psychologicalcounselling/interpersonalpsychotherapy",
       },
       {
         content: "Overthinking Counselling",
+        level: 2,
         ref: "/services/psychologicalcounselling/overthinkingcounselling",
       },
       {
         content: "Motivational Counselling",
+        level: 2,
         ref: "/services/psychologicalcounselling/motivationalcounselling",
       },
       {
         content: "Sex Counselling",
+        level: 2,
         ref: "/services/psychologicalcounselling/sexcounselling",
       },
       {
         content: "",
+        level: 2,
         ref: "/services/psychologicalcounselling",
       },
     ],
-    testimonial: [
-      {
-        content: "Testimonial 1",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 2",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 3",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 4",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 5",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 6",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 7",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 8",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 9",
-        ref: "#",
-      },
-      {
-        content: "Testimonial 0",
-        ref: "#",
-      },
-    ],
-    caseStudies: [
-      {
-        content: "Case Study 1",
-        ref: "#",
-      },
-      {
-        content: "Case Study 2",
-        ref: "#",
-      },
-      {
-        content: "Case Study 3",
-        ref: "#",
-      },
-      {
-        content: "Case Study 4",
-        ref: "#",
-      },
-      {
-        content: "Case Study 5",
-        ref: "#",
-      },
-      {
-        content: "Case Study 6",
-        ref: "#",
-      },
-      {
-        content: "Case Study 7",
-        ref: "#",
-      },
-      {
-        content: "Case Study 8",
-        ref: "#",
-      },
-      {
-        content: "Case Study 9",
-        ref: "#",
-      },
-      {
-        content: "Case Study 0",
-        ref: "#",
-      },
-    ],
-    blogs: [
-      {
-        content: "Blog 1",
-        ref: "#",
-      },
-      {
-        content: "Blog 2",
-        ref: "#",
-      },
-      {
-        content: "Blog 3",
-        ref: "#",
-      },
-      {
-        content: "Blog 4",
-        ref: "#",
-      },
-      {
-        content: "Blog 5",
-        ref: "#",
-      },
-      {
-        content: "Blog 6",
-        ref: "#",
-      },
-      {
-        content: "Blog 7",
-        ref: "#",
-      },
-      {
-        content: "Blog 8",
-        ref: "#",
-      },
-      {
-        content: "Blog 9",
-        ref: "#",
-      },
-      {
-        content: "Blog 0",
-        ref: "#",
-      },
-    ],
   };
-
-  const handleMouseEnter = useCallback(
-    (sectionName) => {
-      setSection(sectionName);
-      setIsDropdownActive(true);
-    },
-    [setSection, setIsDropdownActive]
-  );
 
   const handleMouseLeave = useCallback(() => {
     setIsDropdownActive(false);
@@ -306,8 +174,7 @@ function Navbar() {
         to={menu.ref}
         style={{
           gridColumn: menu.ref === "#" ? "1 / span 3" : "",
-          fontSize: menu.ref === "#" ? "1.2em" : "",
-          fontWeight: menu.ref === "#" ? "bolder" : "",
+          fontWeight: menu.level == 2 ? "light" : "bolder",
         }}
       >
         {menu.content}
@@ -343,11 +210,23 @@ function Navbar() {
                 ></path>
               </svg>
             </button>
-            <a>
+            {/* <a>
               <i className="fa-solid fa-cart-shopping"></i>
             </a>
-            <a>Shop</a>
-            <a>Contact Us</a>
+            <a>Shop</a> */}
+            <Link
+              to="/contactus"
+              style={{
+                color:
+                  location.pathname === "/"
+                    ? isScrolled
+                      ? "black"
+                      : "white"
+                    : "black",
+              }}
+            >
+              Contact Us
+            </Link>
             <i className="fa-solid fa-magnifying-glass"></i>{" "}
           </ul>
           <ul className={isScrolled ? "lowerscrolled" : "lowerdiv"}>
@@ -375,13 +254,16 @@ function Navbar() {
             </a>
             <a
               onMouseEnter={() => {
-                setSection("services");
                 setIsDropdownActive(true);
+                setSection("services");
               }}
             >
               Services <DropdownArrow />{" "}
             </a>
             <Link
+              onMouseEnter={() => {
+                setIsDropdownActive(false);
+              }}
               to="/testimonials"
               style={{
                 color:
@@ -394,22 +276,36 @@ function Navbar() {
             >
               Testimonials
             </Link>
-            <a
+            <Link
               onMouseEnter={() => {
-                setSection("caseStudies");
-                setIsDropdownActive(true);
+                setIsDropdownActive(false);
+              }}
+              style={{
+                color:
+                  location.pathname === "/"
+                    ? isScrolled
+                      ? "black"
+                      : "white"
+                    : "black",
               }}
             >
-              Case Studies <DropdownArrow />{" "}
-            </a>
-            <a
+              Case Studies
+            </Link>
+            <Link
               onMouseEnter={() => {
-                setSection("blogs");
-                setIsDropdownActive(true);
+                setIsDropdownActive(false);
+              }}
+              style={{
+                color:
+                  location.pathname === "/"
+                    ? isScrolled
+                      ? "black"
+                      : "white"
+                    : "black",
               }}
             >
-              Blogs <DropdownArrow />{" "}
-            </a>
+              Blogs
+            </Link>
           </ul>
         </div>
       </div>
