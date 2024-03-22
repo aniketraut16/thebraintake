@@ -23,23 +23,28 @@ function Navbar() {
   const dropdownData = {
     aboutus: [
       {
-        content: "Our History",
-        ref: "#2",
+        content: "Directors Message",
+        ref: "/aboutus/directorsmessage",
         level: 1,
       },
       {
         content: "Mission Values and Vision",
-        ref: "#2",
+        ref: "/aboutus/missionvisionandvalues",
         level: 1,
       },
       {
         content: "Our Team",
-        ref: "#2",
+        ref: "/aboutus/team",
         level: 1,
       },
       {
         content: "Offices",
-        ref: "#2",
+        ref: "/aboutus/offices",
+        level: 1,
+      },
+      {
+        content: "Awards",
+        ref: "/aboutus/awards",
         level: 1,
       },
     ],
@@ -343,7 +348,7 @@ function Navbar() {
         to={menu.ref}
         style={{
           gridColumn: menu.ref === "#" ? "1 / span 3" : "",
-          fontWeight: menu.level == 2 ? "light" : "bolder",
+          fontWeight: menu.level == 2 ? "normal" : "bolder",
         }}
       >
         {menu.content}

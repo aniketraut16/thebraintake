@@ -8,6 +8,10 @@ import UniqueFeature from "./Components/Unique Features/UniqueFeature";
 import Services from "./Components/Services/Services.jsx";
 import Testimonials from "./Components/Testimonials/Testimonials.jsx";
 import Contact from "./Components/Contact Us/Contact.jsx";
+import Team from "./Components/AboutUs/Team.jsx";
+import DirectorsMessage from "./Components/AboutUs/DirectorsMessage.jsx";
+import MissionVissionValues from "./Components/AboutUs/MissionVissionValues.jsx";
+import Awards from "./Components/AboutUs/Awards.jsx";
 
 function App() {
   return (
@@ -16,7 +20,19 @@ function App() {
       <MobileNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/aboutus/team" element={<Team />} />
+        <Route
+          path="/aboutus/directorsmessage"
+          element={<DirectorsMessage />}
+        />
+        <Route
+          path="/aboutus/missionvisionandvalues"
+          element={<MissionVissionValues />}
+        />
+        <Route path="/aboutus/awards" element={<Awards />} />
+
         <Route path="/contactus" element={<Contact />} />
+        <Route path="/aboutus/offices" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/uniquefeature/:section" element={<UniqueFeature />} />
         <Route path="/services/:section/:subsection" element={<Services />} />

@@ -3,6 +3,12 @@ import "./Contact.css";
 
 function Contact() {
   const observedElements = useRef([]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

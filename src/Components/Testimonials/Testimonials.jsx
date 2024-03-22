@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Testimonial.css";
 import data from "./Testimonial.json";
 
 function Testimonials() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const oneTestmonial = (ele) => {
     return (
       <div className="onetestimonial">
