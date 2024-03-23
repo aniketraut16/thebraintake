@@ -424,6 +424,9 @@
   transition-duration: 0.3s;
 }
 @media only screen and (max-width: 970px) {
+  .breadcrumb {
+    margin-top: 0vh;
+  }
   #landing-text h1 {
     font-size: 0.4em;
   }

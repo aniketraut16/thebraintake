@@ -50,7 +50,7 @@ function Navbar() {
     ],
     uniqueFeatures: [
       {
-        content: "Marital Counselling",
+        content: "Marital Counseling",
         ref: "/uniquefeature/maritialcounselling",
         level: 1,
       },
@@ -65,7 +65,7 @@ function Navbar() {
         level: 1,
       },
       {
-        content: "Career Counselling",
+        content: "Career Counseling",
         ref: "/uniquefeature/careercounseling",
         level: 1,
       },
@@ -90,7 +90,7 @@ function Navbar() {
         ref: "/uniquefeature/cbt",
       },
       {
-        content: "Parenting Counselling",
+        content: "Parenting Counseling",
         ref: "/uniquefeature/parentingcounselling",
         level: 1,
       },
@@ -127,12 +127,12 @@ function Navbar() {
     ],
     services: [
       {
-        content: "Psychological Counselling",
+        content: "Psychological Counseling",
         level: 1,
         ref: "#",
       },
       {
-        content: "Substance Abuse or Addiction Counselling",
+        content: "Substance Abuse or Addiction Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/substanceabuseoraddictioncounselling",
       },
@@ -142,17 +142,17 @@ function Navbar() {
         ref: "/services/psychologicalcounselling/interpersonalpsychotherapy",
       },
       {
-        content: "Overthinking Counselling",
+        content: "Overthinking Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/overthinkingcounselling",
       },
       {
-        content: "Motivational Counselling",
+        content: "Motivational Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/motivationalcounselling",
       },
       {
-        content: "Sex Counselling",
+        content: "Sex Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/sexcounselling",
       },
@@ -162,12 +162,12 @@ function Navbar() {
         ref: "/services/psychologicalcounselling/personcenteredtherapy",
       },
       {
-        content: "Grief Counselling",
+        content: "Grief Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/griefcounselling",
       },
       {
-        content: "Dialectical Behaviour Counselling",
+        content: "Dialectical Behaviour Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/dialecticalbehaviourcounselling",
       },
@@ -202,7 +202,7 @@ function Navbar() {
         ref: "/services/psychologicalcounselling/arttherapy",
       },
       {
-        content: "Rehabilitation Counselling",
+        content: "Rehabilitation Counseling",
         level: 2,
         ref: "/services/psychologicalcounselling/rehabilitationcounselling",
       },
@@ -217,7 +217,7 @@ function Navbar() {
         ref: "/services/psychologicalcounselling/gestalttherapy",
       },
       {
-        content: "Sexology Counselling",
+        content: "Sexology Counseling",
         level: 1,
         ref: "#",
       },
@@ -293,12 +293,12 @@ function Navbar() {
         ref: "#",
       },
       {
-        content: "Basic Counselling",
+        content: "Basic Counseling",
         level: 2,
         ref: "/services/psychologicaltesting/basiccounselling",
       },
       {
-        content: "Personal Counselling",
+        content: "Personal Counseling",
         level: 2,
         ref: "/services/psychologicaltesting/personalcounselling",
       },
@@ -466,6 +466,7 @@ function Navbar() {
               Case Studies
             </Link>
             <Link
+              to={"/blogs"}
               onMouseEnter={() => {
                 setIsDropdownActive(false);
               }}

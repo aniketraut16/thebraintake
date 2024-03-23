@@ -46,6 +46,12 @@
 
 /* mission Vision and Values */
 
+#MissionVissionValues *:not(.card__content) {
+  transition: all 500ms ease-in-out;
+
+  animation: componrntrenser 1.5s ease;
+}
+
 #MissionVissionValues {
   width: 100%;
   margin-top: 18vh;
@@ -137,6 +143,57 @@
   transform: rotate(-45deg);
 }
 
+/* TEAMS */
+#Team * {
+  transition: all 500ms ease-in-out;
+
+  animation: componrntrenser 1.5s ease;
+}
+#Team {
+  margin-top: 18vh;
+  background-color: #fff8e3;
+}
+
+#teamdiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 4em 0px;
+}
+
+.onemember {
+  width: 450px;
+  border-radius: 5px;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.onemember img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.onemember:hover div {
+  height: 20%;
+}
+.onemember > div {
+  padding: 20px;
+  transition: all 1s ease;
+  background-color: #1b4296f0;
+  border-radius: 10px;
+  position: absolute;
+  color: white;
+  margin-bottom: 1em;
+  width: 60%;
+}
+
 @media screen and (max-width: 72em) and (min-width: 51em) {
   .onedirector .drinfo {
     width: 70%;
@@ -146,6 +203,12 @@
   }
   .onedirector {
     width: 50em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .onemember {
+    width: 90%;
+    height: 550px;
   }
 }
 

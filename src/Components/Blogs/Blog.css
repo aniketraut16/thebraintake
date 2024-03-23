@@ -1,0 +1,101 @@
+#Blogs {
+  margin-top: 18vh;
+}
+
+.blog-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2em 0px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.oneblog img {
+  width: 100%;
+}
+.oneblog * {
+  font-family: RelFont;
+}
+.oneblog {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.oneblog > a {
+  text-decoration: none;
+  color: #501a77;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+}
+.lineP {
+  border-right: 2px solid grey;
+  padding-right: 10px;
+}
+.oneblog > div {
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+  display: flex;
+  font-size: 1.3em;
+  gap: 10px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.oneblog > span a {
+  color: #501a77;
+  text-decoration: none;
+}
+.oneblog > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.One-Blog {
+  margin-top: 18vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.One-Blog > * {
+  width: 800px;
+}
+.One-Blog > h1 {
+  font-size: 4em;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.One-Blog > p {
+  font-size: 1.5em;
+}
+.One-Blog > h2 {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.One-Blog > div {
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+  display: flex;
+  font-size: 1.3em;
+  gap: 10px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .One-Blog > * {
+    width: 90%;
+  }
+  .One-Blog > h1 {
+    font-size: 3em;
+    word-wrap: break-word;
+  }
+}

@@ -22,6 +22,11 @@
 .Contact > div > div {
   width: 40%;
 }
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .adress p {
   margin: 0px;
 }

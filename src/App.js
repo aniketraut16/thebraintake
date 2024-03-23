@@ -12,6 +12,8 @@ import Team from "./Components/AboutUs/Team.jsx";
 import DirectorsMessage from "./Components/AboutUs/DirectorsMessage.jsx";
 import MissionVissionValues from "./Components/AboutUs/MissionVissionValues.jsx";
 import Awards from "./Components/AboutUs/Awards.jsx";
+import Blogs from "./Components/Blogs/Blogs.jsx";
+import Blog from "./Components/Blogs/Blog.jsx";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         />
         <Route path="/aboutus/awards" element={<Awards />} />
 
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:section" element={<Blog />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/aboutus/offices" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />

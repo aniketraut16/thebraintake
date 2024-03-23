@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "title": "Human Psychology",
+    "searchkey": "humanpsychology",
+    "by": "Pycortex Brain Take limited",
+    "Date": "10 Oct 2021",
+    "tag": "Psychology",
+    "img":"/assets/Images/Blogs/blog1.webp",
+    "content": [
+      { "tag": "h2", "text": "Different kinds of psychology" },
+      {
+        "tag": "p",
+        "text": "Experimental psychology uses classic, laboratory-based, scientific methods to study human behavior: it uses similar techniques to physics, chemistry, or biology, often carried out in a lab, except that instead of studying light rays, chemical reactions, or beetles, the experiments involve ourselves and other people."
+      },
+      {
+        "tag": "p",
+        "text": "Social psychology tends to study how people behave in real-world situations—for example, how people react to advertisements, why they commit crimes, and how we can work more efficiently in offices and factories. Social psychology doesn’t always involve experiments; it might be based on questionnaires or observations instead."
+      },
+      {
+        "tag": "p",
+        "text": "Humans are the most complex of all animals, which explains why psychology is such a vast subject. Within the psychology department of a typical university, you’ll find people working in a huge range of different areas. There are people who study perception (such as how our eyes and ears work), learning (how we develop as children and how we make sense of the world as adults), memory (why we remember and how we forget), language, thinking, and reasoning. For most people, vision is easily the most important sense, closely followed by hearing; that also explains why perceptual psychologists have traditionally devoted most effort to studying vision, closely followed by hearing (comparatively speaking, the other senses have barely been explored at all). Most of us assume that we see with our eyes, but it’s far more accurate to say that we see with our eyes and our brains. While we can’t see without our eyes, it’s also true that our brains carry out a huge amount of processing on the sensory impressions they receive—and in all kinds of interesting ways. Learning goes hand-in-hand with survival, but it’s a surprisingly large and complex subject. At one end of the spectrum, psychologists study the process of conditioning, which is how animals come to associate a particular stimulus with a certain response. One of the first people to look into this was Russian scientist Ivan Pavlov (1849–1936), who famously rang a bell when he delivered food to his dogs; eventually, he found the dogs would salivate simply when he rang the bell, even when there was no food around because they’d been conditioned to associate salivating with the sound of the bell. Psychological states such as thoughts and feelings are real. Brain states are real. The problem is that the two are not really in the same way, creating the mind-brain correspondence problem. In this article, I present a possible solution to this problem that involves two suggestions. First, complex psychological states such as emotion and cognition can be thought of as constructed events that can be causally reduced to a set of more basic, psychologically primitive ingredients that are more clearly respected by the brain. "
+      }
+    ]
+  }
+]

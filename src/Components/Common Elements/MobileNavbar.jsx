@@ -447,9 +447,9 @@ function MobileNavbar() {
 
             setisLevel2Active(false);
           }}
-          to="/spansuit/systemprocessandtools"
+          to="/aboutus/directorsmessage"
         >
-          Systems, Processes and Tools
+          Directors Message
         </Link>
         <Link
           onClick={() => {
@@ -457,9 +457,9 @@ function MobileNavbar() {
 
             setisLevel2Active(false);
           }}
-          to="/spansuit/mobileappview"
+          to="/aboutus/missionvisionandvalues"
         >
-          Mobile APP
+          Mission Values and Vision
         </Link>
         <Link
           onClick={() => {
@@ -467,9 +467,29 @@ function MobileNavbar() {
 
             setisLevel2Active(false);
           }}
-          to="/spansuit/brandprotection"
+          to="/aboutus/team"
         >
-          Brand Protection
+          Our Team
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+
+            setisLevel2Active(false);
+          }}
+          to="/aboutus/offices"
+        >
+          Offices
+        </Link>
+        <Link
+          onClick={() => {
+            setisBurgerActive(!isBurgerActive);
+
+            setisLevel2Active(false);
+          }}
+          to="/aboutus/awards"
+        >
+          Awards
         </Link>
       </>
     );
