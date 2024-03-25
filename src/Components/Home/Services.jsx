@@ -1,18 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-// import serviceimg1 from "../../../public"/assets/Images/Home/service1.webp";
-// import serviceimg2 from "../../../public"/assets/Images/Home/service2.png";
-// import serviceimg3 from "../../../public"/assets/Images/Home/service3.jpg";
-// import serviceimg4 from "../../../public"/assets/Images/Home/service4.jpg";
-// import serviceimg5 from "../../../public"/assets/Images/Home/service5.jpg";
-// import serviceimg6 from "../../../public"/assets/Images/Home/service6.jpg";
 
 function HomeServices() {
   const [sections, setSections] = useState([
     {
       title: "Cognitive Behavior Therapy",
-      bg: `${process.env.PUBLIC_URL}/assets/Images/Home/service1.webp`,
+      bg: `${process.env.PUBLIC_URL}/assets/Images/Home/service1.jpg`,
       info: "Cognitive Behavioral Therapy (CBT) offers valuable support for individuals experiencing a range of emotional and psychological challenges. It assists individuals in managing their moods, alleviating anxiety, addressing depression, coping with issues related to alcohol and drug use, navigating marital difficulties, managing eating disorders, and coping with severe mental illnesses.",
       active: true,
       to: "/uniquefeature/cbt",
@@ -53,55 +46,6 @@ function HomeServices() {
       to: "/uniquefeature/anxietycounseling",
     },
   ]);
-  const [isVisible, setIsVisible] = useState(false);
-
-  // const infoTabRef = useRef(null);
-  // const introNavRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       setIsVisible(entries[0].isIntersecting);
-  //     },
-  //     { threshold: 0.2 }
-  //   );
-
-  //   const infoTabElement = infoTabRef.current;
-  //   const introNavElement = introNavRef.current;
-
-  //   if (infoTabElement && introNavElement) {
-  //     observer.observe(infoTabElement);
-  //     observer.observe(introNavElement);
-  //   }
-
-  //   return () => {
-  //     if (infoTabElement && introNavElement) {
-  //       observer.unobserve(infoTabElement);
-  //       observer.unobserve(introNavElement);
-  //     }
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   if (isVisible) {
-  //     const infoTabElement = infoTabRef.current;
-  //     const introNavElement = introNavRef.current;
-
-  //     if (infoTabElement && introNavElement) {
-  //       infoTabElement.style.transform = "translateX(0)";
-  //       introNavElement.style.transform = "translateX(0)";
-  //     }
-  //   } else {
-  //     const infoTabElement = infoTabRef.current;
-  //     const introNavElement = introNavRef.current;
-
-  //     if (infoTabElement && introNavElement) {
-  //       infoTabElement.style.transform = "translateX(-5em)";
-  //       introNavElement.style.transform = "translateX(5em)";
-  //     }
-  //   }
-  // }, [isVisible]);
-
   const handleSectionHover = (index) => {
     const updatedSections = sections.map((section, i) => ({
       ...section,
