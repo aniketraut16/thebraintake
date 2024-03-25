@@ -64,8 +64,8 @@ body {
 }
 
 #HomeServices {
-  gap: 20%;
   box-shadow: inset 0 0 1000px 350px rgba(0, 0, 0, 0.9);
+  gap: 20%;
   display: flex;
   min-height: 100vh;
   color: white;
@@ -546,6 +546,7 @@ body {
   #LandingPage {
     height: 100vh;
   }
+
   /* WE CARE SECTION */
 
   #wecare img {
@@ -557,6 +558,10 @@ body {
   }
 
   /* OUR SERVICES */
+
+  #HomeServices {
+    box-shadow: inset 0 0 1000px 350px rgba(0, 0, 0, 0.8);
+  }
   .info-tab {
     display: none;
   }
