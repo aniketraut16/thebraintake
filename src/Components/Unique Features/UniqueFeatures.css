@@ -4,9 +4,9 @@
   animation: componrntrenser 1.5s ease;
 }
 #UniqueFeature {
+  margin-top: 18vh;
   width: 100%;
   background-color: #fff0e3;
-  margin-top: 18vh;
 }
 
 .breadcrumb {
@@ -102,6 +102,9 @@
   .breadcrumb {
     width: auto;
     padding: 10px 2em;
+  }
+  #UniqueFeature {
+    margin-top: 12vh;
   }
 
   #UniqueFeature .section1 > div {

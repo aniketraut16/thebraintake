@@ -118,4 +118,7 @@
   #Testimonials .header {
     font-size: 3em;
   }
+  #Testimonials {
+    margin-top: 12vh;
+  }
 }

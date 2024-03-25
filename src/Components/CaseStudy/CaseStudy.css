@@ -37,3 +37,11 @@
   text-decoration: none;
   gap: 10px;
 }
+@media screen and (max-width: 500px) {
+  .onecase {
+    width: 85%;
+  }
+  #CaseStudies {
+    margin-top: 12vh;
+  }
+}

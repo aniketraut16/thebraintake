@@ -765,7 +765,7 @@ function MobileNavbar() {
         >
           Contact Us
         </Link>
-        <Link
+        {/* <Link
           onClick={() => {
             setisBurgerActive(!isBurgerActive);
           }}
@@ -774,7 +774,7 @@ function MobileNavbar() {
         >
           <i className="fa-solid fa-user"></i>
           Login
-        </Link>
+        </Link> */}
       </div>
       <div
         id="mobNavL2"

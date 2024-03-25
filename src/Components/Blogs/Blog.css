@@ -22,7 +22,7 @@
 }
 .oneblog {
   width: 25em;
-  margin: 1em;
+  margin: 2em 1em;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -101,6 +101,10 @@
 @media screen and (max-width: 800px) {
   .One-Blog > * {
     width: 90%;
+  }
+  #Blogs,
+  .One-Blog {
+    margin-top: 12vh;
   }
   .One-Blog > h1 {
     font-size: 3em;

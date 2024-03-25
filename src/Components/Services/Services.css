@@ -80,6 +80,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  #Services {
+    margin-top: 12vh;
+  }
   #Services .sec1 {
     width: 90%;
     padding: 5% 5%;
