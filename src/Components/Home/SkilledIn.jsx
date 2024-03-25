@@ -62,11 +62,16 @@ function SkilledIn() {
           </h1>
           <img src={imgArr[0]} alt="" className="mobile-view-photo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            facere quia unde impedit ipsa ullam. Vel tempore consequuntur
-            eveniet fugiat. Quidem expedita asperiores doloremque officia
-            praesentium voluptatem distinctio atque sed?
-            <Link class="know-more-btn">
+            Adult psychology is a multifaceted field of study that delves into
+            the cognitive, emotional, and behavioral aspects of individuals in
+            the adult stage of development. It encompasses a wide range of
+            topics, including identity formation, relationships, career
+            development, and mental health. One significant area of focus within
+            adult psychology is understanding how life experiences, societal
+            influences, and biological factors shape an individual's thoughts,
+            feelings, and actions as they navigate the challenges and
+            opportunities of adulthood.
+            <Link class="know-more-btn" to={""}>
               Know More
               <div class="icon">
                 <svg
@@ -86,15 +91,23 @@ function SkilledIn() {
           </p>
         </div>
         <div id="skill2">
-          <h1> Child And Adult Psychology</h1>
+          <h1> Parenting Counselling</h1>
           <img src={imgArr[1]} alt="" className="mobile-view-photo" />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            facere quia unde impedit ipsa ullam. Vel tempore consequuntur
-            eveniet fugiat. Quidem expedita asperiores doloremque officia
-            praesentium voluptatem distinctio atque sed?
-            <Link class="know-more-btn">
+            Parenting counseling is a specialized form of therapy aimed at
+            supporting parents in navigating the challenges and complexities of
+            raising children. It provides a safe and non-judgmental space for
+            parents to explore their concerns, frustrations, and goals related
+            to parenting. Through counseling sessions, parents can gain insights
+            into their parenting styles, communication patterns, and family
+            dynamics. Counselors often use evidence-based techniques and
+            strategies to help parents develop effective discipline strategies,
+            improve parent-child relationships, and manage stress.
+            <Link
+              class="know-more-btn"
+              to={"/uniquefeature/parentingcounselling"}
+            >
               Know More
               <div class="icon">
                 <svg
@@ -114,15 +127,24 @@ function SkilledIn() {
           </p>
         </div>
         <div id="skill3">
-          <h1> Geriatric Psychology</h1>
+          <h1>Marital Counselling</h1>
           <img src={imgArr[2]} alt="" className="mobile-view-photo" />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            facere quia unde impedit ipsa ullam. Vel tempore consequuntur
-            eveniet fugiat. Quidem expedita asperiores doloremque officia
-            praesentium voluptatem distinctio atque sed?
-            <Link class="know-more-btn">
+            Marital counseling, also known as couples therapy, is a specialized
+            form of psychotherapy designed to help couples address and resolve
+            conflicts, improve communication, and strengthen their relationship.
+            In marital counseling sessions, trained therapists provide a
+            supportive and neutral environment where couples can openly discuss
+            their concerns, emotions, and relationship dynamics.Through various
+            therapeutic techniques and interventions, such as active listening,
+            conflict resolution strategies, and behavior modification exercises,
+            couples learn to identify and understand the underlying issues
+            contributing to their difficulties.
+            <Link
+              class="know-more-btn"
+              to={"/uniquefeature/maritialcounselling"}
+            >
               Know More
               <div class="icon">
                 <svg
@@ -142,15 +164,22 @@ function SkilledIn() {
           </p>
         </div>
         <div id="skill4">
-          <h1> Memory Management</h1>
+          <h1>Insomnia Counseling</h1>
           <img src={imgArr[3]} alt="" className="mobile-view-photo" />
-
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            facere quia unde impedit ipsa ullam. Vel tempore consequuntur
-            eveniet fugiat. Quidem expedita asperiores doloremque officia
-            praesentium voluptatem distinctio atque sed?
-            <Link class="know-more-btn">
+            Insomnia counseling offers valuable support and guidance to
+            individuals struggling with persistent sleep difficulties. By
+            addressing the underlying factors contributing to insomnia, such as
+            stress, anxiety, or lifestyle habits, counselors work
+            collaboratively with clients to develop personalized strategies for
+            improving sleep quality and quantity. Through cognitive-behavioral
+            techniques, relaxation exercises, and sleep hygiene education,
+            individuals learn effective coping mechanisms to manage racing
+            thoughts and bedtime worries.
+            <Link
+              class="know-more-btn"
+              to={"/uniquefeature/insomniacounseling"}
+            >
               Know More
               <div class="icon">
                 <svg
@@ -170,15 +199,25 @@ function SkilledIn() {
           </p>
         </div>
         <div id="skill5">
-          <h1> Psychosexual Disorders</h1>
+          <h1> Intelligence Building Program</h1>
           <img src={imgArr[4]} alt="" className="mobile-view-photo" />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            facere quia unde impedit ipsa ullam. Vel tempore consequuntur
-            eveniet fugiat. Quidem expedita asperiores doloremque officia
-            praesentium voluptatem distinctio atque sed?
-            <Link class="know-more-btn">
+            An intelligence building program is designed to enhance cognitive
+            abilities and optimize intellectual potential through structured
+            activities, exercises, and techniques. These programs often
+            integrate various cognitive tasks such as problem-solving, critical
+            thinking, memory enhancement, and creativity exercises tailored to
+            stimulate different areas of the brain. Additionally, they may
+            incorporate strategies for improving learning skills, information
+            processing speed, and mental flexibility. Intelligence building
+            programs typically draw from principles of neuroscience, psychology,
+            and education to provide participants with a holistic approach to
+            cognitive development.
+            <Link
+              class="know-more-btn"
+              to={"/services/psychologicaltesting/intelligencebuildingprogram"}
+            >
               Know More
               <div class="icon">
                 <svg

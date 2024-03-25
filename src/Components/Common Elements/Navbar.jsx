@@ -451,6 +451,7 @@ function Navbar() {
               Testimonials
             </Link>
             <Link
+              to={"/casestudies"}
               onMouseEnter={() => {
                 setIsDropdownActive(false);
               }}

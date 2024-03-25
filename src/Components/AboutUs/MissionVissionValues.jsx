@@ -8,14 +8,16 @@ function MissionVissionValues() {
       </div>
 
       <div className="missionvv_cards">
-        <div className="card">
-          <img
-            src={
+        <div
+          className="card"
+          style={{
+            background: `url(${
               process.env.PUBLIC_URL +
-              "/assets/Images/AboutUs/MissionVissionAndValues/mission.png"
-            }
-            alt=""
-          />
+              "/assets/Images/AboutUs/MissionVissionAndValues/mission.jpg"
+            }) center / cover`,
+          }}
+        >
+          <span>MISSION</span>
           <div className="card__content">
             <p className="card__title">Mission</p>
             <p className="card__description">
@@ -34,14 +36,16 @@ function MissionVissionValues() {
             </p>
           </div>
         </div>
-        <div className="card">
-          <img
-            src={
+        <div
+          className="card"
+          style={{
+            background: `url(${
               process.env.PUBLIC_URL +
-              "/assets/Images/AboutUs/MissionVissionAndValues/vision.png"
-            }
-            alt=""
-          />
+              "/assets/Images/AboutUs/MissionVissionAndValues/vision.jpg"
+            }) center / cover`,
+          }}
+        >
+          <span>VISION</span>
           <div className="card__content">
             <p className="card__title">Vision</p>
             <p className="card__description">
@@ -61,14 +65,16 @@ function MissionVissionValues() {
             </p>
           </div>
         </div>
-        <div className="card">
-          <img
-            src={
+        <div
+          className="card"
+          style={{
+            background: `url(${
               process.env.PUBLIC_URL +
-              "/assets/Images/AboutUs/MissionVissionAndValues/values.png"
-            }
-            alt=""
-          />
+              "/assets/Images/AboutUs/MissionVissionAndValues/values.jpg"
+            }) center / cover`,
+          }}
+        >
+          <span>VALUES</span>
           <div className="card__content">
             <p className="card__title">Values</p>
             <p className="card__description">

@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-// import img1 from "../../../public "/assets/Images/Home/service2.png";
-// import img2 from "../../../public "/assets/Images/Home/service3.jpg";
-// import img3 from "../../../public "/assets/Images/Home/service4.jpg";
-// import img4 from "../../../public "/assets/Images/Home/service5.jpg";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function BrainTakeForWho() {
   const [index, setindex] = useState(0);
@@ -26,12 +21,17 @@ function BrainTakeForWho() {
     "Memory loss, mood disorders, anxiety, and progressive neurological decline commonly accompany the aging brain. Our interdisciplinary approach transcends conventional medicine, blending modern scientific advancements with ancient wisdom. This allows us to craft personalized plans tailored to each patient's unique needs, ensuring comprehensive care and holistic support.",
   ];
   const imgArr = [
-    `${process.env.PUBLIC_URL}/assets/Images/Home/service2.png`,
-    `${process.env.PUBLIC_URL}/assets/Images/Home/service3.jpg`,
-    `${process.env.PUBLIC_URL}/assets/Images/Home/service4.jpg`,
-    `${process.env.PUBLIC_URL}/assets/Images/Home/service5.jpg`,
+    `${process.env.PUBLIC_URL}/assets/Videos/Home/psycortexfor4.mp4`,
+    `${process.env.PUBLIC_URL}/assets/Videos/Home/psycortexfor3.mp4`,
+    `${process.env.PUBLIC_URL}/assets/Videos/Home/psycortexfor2.mp4`,
+    `${process.env.PUBLIC_URL}/assets/Videos/Home/psycortexfor1.mp4`,
   ];
   const extLinkArr = ["#", "#", "#", "#"];
+
+  // useEffect(() => {
+  //   const video = document.getElementById("videoPlayer");
+  //   video.play();
+  // }, [index]);
 
   return (
     <div id="BrainTakeForWho">
@@ -75,25 +75,11 @@ function BrainTakeForWho() {
           <h1>{titleArr[index]}</h1>
           <p>{p1Arr[index]}</p>
           <p>{p2Arr[index]}</p>
-          <Link to={extLinkArr[index]} class="know-more-btn">
-            Know More
-            <div class="icon">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-          </Link>
         </div>
-        <img src={imgArr[index]} alt="" />
+        <video key={index} id="videoPlayer" autoPlay loop muted>
+          <source src={imgArr[index]} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );

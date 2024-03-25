@@ -95,7 +95,13 @@ function UniqueFeature() {
               {sectionData.p22}
             </p>
           </div>
-          <video controls ref={(el) => el && observedElements.current.push(el)}>
+          <video
+            autoPlay
+            loop
+            muted
+            key={section}
+            ref={(el) => el && observedElements.current.push(el)}
+          >
             <source
               src={
                 process.env.PUBLIC_URL +

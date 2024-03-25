@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 // import bg3 from "../../../public "/assets/Images/Home/service3.jpg ";
 
 function LandingPage() {
-  const titleArr = ["Mental Health", "Physical Health", "Other Health"];
+  const titleArr = ["Mental Health", "Indian Psychology", "Drug De-Addiction"];
   const infoArry = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo ullam libero, voluptate ratione beatae necessitatibus odio ducimus saepe doloremque ex assumenda, reprehenderit, aspernatur esse laudantium voluptatum! Tenetur, debitis nesciunt? Dolorem beatae impedit, debitis error totam eos natus iusto consequuntur sit nam officiis cum qui quidem labore magnam eaque atque esse asperiores eum odio reprehenderit inventore architecto. Quo, beatae nisi.",
-    "Praesentium voluptas eaque tempora velit consectetur, enim illo saepe provident error. Inventore sit non dolorem nostrum quis eum, eius aperiam ipsum dignissimos architecto perferendis ratione magni! Vitae natus voluptatum labore. In, iste eaque? Vero amet eveniet laboriosam esse. Quod, incidunt ut ducimus, impedit consequatur recusandae officia aliquid perferendis ipsa iste fugit, dolorem saepe commodi quam quasi dolores placeat. Molestias, temporibus.",
-    "Unde tenetur nam, in eaque ducimus adipisci inventore distinctio incidunt ipsum dicta velit, ratione autem nostrum neque blanditiis praesentium, fuga magni. Ipsum ad ducimus autem nihil fugiat repudiandae? Sequi, porro! Expedita dolorem unde suscipit, aliquid saepe illum repellat ratione id pariatur, iusto porro assumenda, totam cum! Inventore recusandae earum incidunt veniam quo, sequi ipsum repudiandae ab iste vel ad illo.",
+    "Through personalized sessions with trained professionals, individuals can learn effective coping strategies to navigate the challenges of daily life. These sessions often involve identifying stressors, exploring underlying emotions, and developing practical techniques such as relaxation exercises, mindfulness, and cognitive restructuring.",
+    "Indian psychology offers a unique perspective on mental health that integrates ancient wisdom with modern practices. Rooted in ancient texts like the Vedas, Upanishads, and Yoga Sutras, Indian psychology emphasizes holistic well-being encompassing the mind, body, and spirit. Concepts such as Ayurveda, yoga, and meditation are central to promoting mental health by addressing the interconnectedness of physical and psychological states.",
+    "Drug de-addiction counseling offers a lifeline to individuals grappling with substance abuse and addiction. Through compassionate guidance and evidence-based interventions, counselors facilitate the journey towards recovery. They work collaboratively with clients to explore the root causes of addiction, address underlying emotional issues, and develop personalized strategies for managing cravings and triggers.",
   ];
   const bgArr = [
     `${process.env.PUBLIC_URL}/assets/Images/Home/service1.webp`,
@@ -32,7 +32,7 @@ function LandingPage() {
       style={{ background: `url(${bgArr[index]}) center/cover` }}
     >
       <div>
-        <h1>Psychology Therapy</h1>
+        <h1>Psychological Therapy</h1>
         <h2>{titleArr[index]}</h2>
         <p>{infoArry[index]}</p>
       </div>

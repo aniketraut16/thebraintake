@@ -4,9 +4,9 @@ function Stats() {
   const [stat1, setStat1] = useState(0);
   const [stat2, setStat2] = useState(0);
   const [stat3, setStat3] = useState(0);
-  const finalStat1 = 300000;
-  const finalStat2 = 90;
-  const finalStat3 = 90693;
+  const finalStat1 = 10000;
+  const finalStat2 = 8000;
+  const finalStat3 = 10;
 
   const statsRef = useRef(null);
 
@@ -67,16 +67,17 @@ function Stats() {
       </h1>
       <div id="stats-cards" ref={statsRef}>
         <div>
-          <h1>{Math.floor(stat1)}</h1>
-          <h2>Hope-filled contacts annually</h2>
+          <h1>{Math.floor(stat1)}+</h1>
+          <h2>Total Client Served</h2>
+        </div>
+
+        <div>
+          <h1>{Math.floor(stat3)}+</h1>
+          <h2>Experienced Doctors</h2>
         </div>
         <div>
-          <h1>{Math.floor(stat2)}</h1>
-          <h2>Support Groups in over 12 countries</h2>
-        </div>
-        <div>
-          <h1>{Math.floor(stat3)}</h1>
-          <h2>Podcast downloads from over 39 countries</h2>
+          <h1>{Math.floor(stat2)}+</h1>
+          <h2>Satisfied Members</h2>
         </div>
       </div>
     </div>

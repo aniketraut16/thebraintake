@@ -29,14 +29,14 @@ function HomeServices() {
       bg: `${process.env.PUBLIC_URL}/assets/Images/Home/service3.jpg`,
       info: "The primary goal of drug treatment is to provide support and assistance to individuals struggling with addiction, helping them break free from the cycle of compulsive drug seeking and usage. Through comprehensive treatment approaches, individuals are equipped with the tools and resources necessary to overcome their dependence on substances. By addressing the underlying factors contributing to addiction and implementing personalized treatment plans .",
       active: false,
-      to: "",
+      to: "/services/psychologicalcounselling/substanceabuseoraddictioncounselling",
     },
     {
       title: "Memory Management",
       bg: `${process.env.PUBLIC_URL}/assets/Images/Home/service4.jpg`,
       info: "Engaging in regular physical activity has numerous benefits for your overall health, one of which is the enhancement of blood circulation throughout your entire body, including the brain. This increased blood flow plays a crucial role in supporting cognitive function and may contribute to maintaining optimal memory function. By promoting greater blood flow to the brain, physical activity serves as a valuable means of preserving cognitive sharpness .",
       active: false,
-      to: "",
+      to: "/services/psychologicaltesting/intelligencebuildingprogram",
     },
     {
       title: "Career Counselling",
@@ -50,7 +50,7 @@ function HomeServices() {
       bg: `${process.env.PUBLIC_URL}/assets/Images/Home/service6.jpg`,
       info: "Anger management counseling is a comprehensive therapeutic approach meticulously crafted to guide individuals through an introspective journey aimed at understanding and effectively managing the complexities of their anger and its pervasive ramifications. Through this process, participants are empowered to delve deep into their emotional landscape, unraveling the interplay of triggers, underlying emotions, and behavioral responses associated with anger.",
       active: false,
-      to: "",
+      to: "/uniquefeature/anxietycounseling",
     },
   ]);
   const [isVisible, setIsVisible] = useState(false);

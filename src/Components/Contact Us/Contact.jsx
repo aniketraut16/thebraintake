@@ -51,11 +51,11 @@ function Contact() {
           >
             <h2>Get in Touch</h2>
             <p>
-              Block no. 132, 2nd floor, Shriram Tower, Sadar, Nagpur- 440001,
-              Maharashtra
+              Adress : Block no. 132, 2nd floor, Shriram Tower, Sadar, Nagpur-
+              440001, Maharashtra
             </p>
-            <span>9270034937</span>
-            <span>pbraintake@gmail.com</span>
+            <span>Phone no : 9270034937</span>
+            <span>Email : braintake@gmail.com</span>
 
             <div
               className="map"

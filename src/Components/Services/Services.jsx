@@ -65,6 +65,7 @@ function Services() {
         </p>
       </div>
       <div
+        key={subsection}
         className="sec2"
         style={{
           background: `url(${imageUrl}) center / cover fixed`,
