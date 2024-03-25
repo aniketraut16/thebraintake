@@ -348,7 +348,8 @@ function Navbar() {
         to={menu.ref}
         style={{
           gridColumn: menu.ref === "#" ? "1 / span 3" : "",
-          fontWeight: menu.level == 2 ? "normal" : "bolder",
+          fontWeight: menu.level === 2 ? "normal" : "bolder",
+          fontSize: menu.level !== 2 ? "0.95em" : "",
         }}
       >
         {menu.content}

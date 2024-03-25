@@ -3,7 +3,7 @@
 }
 .onetestimonial {
   width: 20em;
-  height: max-content;
+  min-height: 30em;
   display: flex;
   padding: 10px;
   color: #223645;
@@ -29,13 +29,14 @@
 }
 .onetestimonial p {
   margin: 10px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
 }
 .onetestimonial h3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  margin-top: auto;
   font-size: 1.9em;
 }
 .onetestimonial h4 {
@@ -44,9 +45,9 @@
   font-size: 1.3em;
 }
 
-#Testimonials * :not(.header) {
-  transition: all 500ms ease;
+#Testimonials *:not(.header) {
   animation: componrntrenser 1.5s ease;
+  transition: all 500ms ease;
 }
 #Testimonials {
   margin-top: 18vh;
@@ -80,6 +81,9 @@
   margin: 20px 0px;
   margin-top: 30px;
   color: #223645;
+}
+#Testimonials .header h1 {
+  color: white;
 }
 
 #Testimonials h2 {

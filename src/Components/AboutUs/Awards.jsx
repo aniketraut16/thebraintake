@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Awards() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const data = [
     {
       src: "/assets/Images/AboutUs/Awards/certificate1.jpg",
@@ -63,6 +69,7 @@ function Awards() {
 
   return (
     <div id="Awards">
+      <div className="breadcrumb">{" About Us > Awards"} </div>
       <div className="partnershipcardsdiv">
         {data.map((imgs, index) => onecard(imgs))}
         {longdata.map((imgs, index) => onelongcard(imgs))}

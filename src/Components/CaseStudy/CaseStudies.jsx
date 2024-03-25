@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CaseStudy.css";
 import studies from "./CaseStudy.json";
 import { Link } from "react-router-dom";
 function CaseStudies() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const onecasestudy = (casestudy) => {
     return (
       <Link className="onecase" to={`/casestudy/${casestudy.searchkey}`}>

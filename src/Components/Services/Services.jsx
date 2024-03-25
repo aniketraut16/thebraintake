@@ -48,7 +48,7 @@ function Services() {
   }/assets/Images/Services/${section}/img${randomImage}.jpg?${Date.now()}`;
 
   return (
-    <div id="Services">
+    <div id="Services" key={subsection}>
       <div className="breadcrumb">{sectionData.breadcrumb}</div>
       <div className="sec1">
         <h1 ref={(el) => el && observedElements.current.push(el)}>

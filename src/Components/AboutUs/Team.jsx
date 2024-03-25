@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Team() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const members = [
     {
       name: "DR. VIJAY DWIVEDI",
@@ -27,6 +33,7 @@ function Team() {
   };
   return (
     <div id="Team">
+      <div className="breadcrumb">{" About Us > Team"} </div>
       <div id="teamdiv">{oneMember()}</div>
     </div>
   );

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "./Blogs.json";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 
 function Blogs() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const oneblog = (blog) => {
     return (
       <div className="oneblog">

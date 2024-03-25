@@ -43,7 +43,7 @@ function UniqueFeature() {
   }, []); // Ensure useEffect runs whenever sectionData changes
 
   return (
-    <div id="UniqueFeature">
+    <div id="UniqueFeature" key={section}>
       <div
         className="breadcrumb"
         ref={(el) => el && observedElements.current.push(el)}
@@ -60,15 +60,24 @@ function UniqueFeature() {
           </h3>
           <div>
             <div>
-              <p ref={(el) => el && observedElements.current.push(el)}>
+              <p
+                key={section}
+                ref={(el) => el && observedElements.current.push(el)}
+              >
                 {sectionData?.p11}
               </p>
-              <p ref={(el) => el && observedElements.current.push(el)}>
+              <p
+                key={section}
+                ref={(el) => el && observedElements.current.push(el)}
+              >
                 {sectionData?.p12}
               </p>
             </div>
             <div>
-              <p ref={(el) => el && observedElements.current.push(el)}>
+              <p
+                key={section}
+                ref={(el) => el && observedElements.current.push(el)}
+              >
                 {sectionData?.p13}
               </p>
               <img
@@ -88,10 +97,16 @@ function UniqueFeature() {
             <h1 ref={(el) => el && observedElements.current.push(el)}>
               {sectionData.subtitle2}
             </h1>
-            <p ref={(el) => el && observedElements.current.push(el)}>
+            <p
+              key={section}
+              ref={(el) => el && observedElements.current.push(el)}
+            >
               {sectionData.p21}
             </p>
-            <p ref={(el) => el && observedElements.current.push(el)}>
+            <p
+              key={section}
+              ref={(el) => el && observedElements.current.push(el)}
+            >
               {sectionData.p22}
             </p>
           </div>

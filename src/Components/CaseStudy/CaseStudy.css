@@ -1,3 +1,7 @@
+#CaseStudies * {
+  animation: componrntrenser 1.5s ease;
+  transition: all 500ms ease;
+}
 #CaseStudies {
   margin-top: 18vh;
   background-color: #fff8e3;

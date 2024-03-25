@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function MissionVissionValues() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div id="MissionVissionValues">
       <div className="breadcrumb">

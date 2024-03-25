@@ -319,11 +319,14 @@
   background-color: #c78369;
 }
 
-#lower-footer-div h4 {
+#lower-footer-div h4,
+#lower-footer-div h4 a {
   font-family: "Exo 2", sans-serif;
   font-weight: bold;
+  text-decoration: none;
+  font-family: RelFont;
   color: black;
-  padding-top: 1em;
+  padding: 1em 0px;
   font-size: 1.1em;
 }
 #lower-footer-div {
@@ -340,6 +343,7 @@
 }
 #lower-footer-div div a {
   text-decoration: none;
+  font-family: RelFont;
   color: black;
 }
 

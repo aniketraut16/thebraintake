@@ -33,22 +33,13 @@ function Footer() {
       <div id="lower-footer-div">
         <h4>About Us</h4>
         <div>
-          <Link> History</Link>
-          <Link> Directors message</Link>
-          <Link>Mission, Vision and Values</Link>
-          <Link> Value Creation</Link>
-          <Link> Funding Model</Link>
-
-          <Link>Strategy</Link>
-
-          <Link> Capability</Link>
-          <Link> Best Practices </Link>
-          <Link> Leadership Team</Link>
-          <Link>Organisation Structure</Link>
-          <Link>Roles and Responsibilities</Link>
-          <Link> Governance (Advisory Board)</Link>
-          <Link> Partnerships </Link>
-          <Link>Offices</Link>
+          <Link to="/aboutus/directorsmessage">Directors Message</Link>
+          <Link to="/aboutus/missionvisionandvalues">
+            Mission Values and Vision
+          </Link>
+          <Link to="/aboutus/team">Our Team</Link>
+          <Link to="/aboutus/offices">Offices</Link>
+          <Link to="/aboutus/awards">Awards</Link>
         </div>
         <h4>Unique Features</h4>
         <div>
@@ -86,24 +77,133 @@ function Footer() {
             Mental Health Counseling
           </Link>
         </div>
-        <h4>Industries Served</h4>
+        <h4>Services</h4>
+        <h4>Psychological Counseling</h4>
         <div>
-          <Link>Overview of Industries</Link>
-          <Link>Success Stories/ Case Studies /Testimonials</Link>
+          <Link to="/services/psychologicalcounselling/substanceabuseoraddictioncounselling">
+            Substance Abuse or Addiction Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/interpersonalpsychotherapy">
+            Interpersonal Psychotherapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/overthinkingcounselling">
+            Overthinking Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/motivationalcounselling">
+            Motivational Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/sexcounselling">
+            Sex Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/personcenteredtherapy">
+            Person Centered Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/griefcounselling">
+            Grief Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/dialecticalbehaviourcounselling">
+            Dialectical Behaviour Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/solutionfocusedbrieftherapy">
+            Solution-Focused Brief Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/narrativetherapy">
+            Narrative Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/rationalemotivetherapy">
+            Rational Emotive Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/emotionallyfocusedtherapy">
+            Emotionally Focused Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/playtherapy">
+            Play Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/arttherapy">
+            Art Therapy
+          </Link>
+          <Link to="/services/psychologicalcounselling/rehabilitationcounselling">
+            Rehabilitation Counseling
+          </Link>
+          <Link to="/services/psychologicalcounselling/humanisticpsychology">
+            Humanistic Psychology
+          </Link>
+          <Link to="/services/psychologicalcounselling/gestalttherapy">
+            Gestalt Therapy
+          </Link>
         </div>
-        <h4>Traning Programs</h4>
+        <h4>Sexology Counseling</h4>
         <div>
-          <Link> Overview</Link>
-          <Link>Law Enforcement Agencies (LEA) Training</Link>
-          <Link> Customs Training</Link>
-          <Link>External and Internal Stakeholder Training</Link>
+          <Link to="/services/sexologycounselling/erectiledysfunction">
+            Erectile Dysfunction
+          </Link>
+          <Link to="/services/sexologycounselling/lowlibido">Low Libido</Link>
+          <Link to="/services/sexologycounselling/lackofinterest">
+            Lack of Interest
+          </Link>
+          <Link to="/services/sexologycounselling/prematureejaculation">
+            Premature Ejaculation
+          </Link>
+          <Link to="/services/sexologycounselling/lowconfidence">
+            Low Confidence
+          </Link>
+          <Link to="/services/sexologycounselling/lackofresponsetosexualstimulus">
+            Lack of Response to Sexual Stimulus
+          </Link>
+          <Link to="/services/sexologycounselling/inabilitytoreachorgasm">
+            Inability to Reach Orgasm
+          </Link>
+          <Link to="/services/sexologycounselling/excessivelibido">
+            Excessive Libido
+          </Link>
+          <Link to="/services/sexologycounselling/distressingsexualthoughtsunwanted">
+            Distressing Sexual Thoughts Unwanted
+          </Link>
+          <Link to="/services/sexologycounselling/inabilitytocontrolsexualbehaviour">
+            Inability to Control Sexual Behavior
+          </Link>
+          <Link to="/services/sexologycounselling/issuesrelatingtosexualtrauma">
+            Issues relating to Sexual Trauma
+          </Link>
+          <Link to="/services/sexologycounselling/somaticsextherapy">
+            Somatic Sex Therapy
+          </Link>
+          <Link to="/services/sexologycounselling/pelvicfloorphysicaltherapy">
+            Pelvic Floor Physical Therapy
+          </Link>
         </div>
-        <h4>Resources and Toolkits</h4>
+        <h4>Psychological Testing</h4>
         <div>
-          <Link> Blog/Articles/ Videos</Link>
-          <Link> Whitepapers</Link>
-          <Link> Case Studies</Link>
-          <Link>Brand Protection Toolkits</Link>
+          <Link to="/services/psychologicaltesting/basiccounselling">
+            Basic Counseling
+          </Link>
+          <Link to="/services/psychologicaltesting/personalcounselling">
+            Personal Counseling
+          </Link>
+          <Link to="/services/psychologicaltesting/dmittest">DMIT Test</Link>
+          <Link to="/services/psychologicaltesting/psychometricassessment">
+            Psychometric Assessment
+          </Link>
+          <Link to="/services/psychologicaltesting/careersuitabilitytest">
+            Career Suitability Test
+          </Link>
+          <Link to="/services/psychologicaltesting/intelligencebuildingprogram">
+            Intelligence Building Program
+          </Link>
+          <Link to="/services/psychologicaltesting/midbrainactivation">
+            MidBrain Activation
+          </Link>
+        </div>
+        <div>
+          <h4>
+            <Link to="/testimonials">Testimonials </Link>
+          </h4>
+          <h4>
+            <Link to="/casestudies">Case Studies </Link>
+          </h4>
+          <h4>
+            <Link to="/blogs">Blogs </Link>
+          </h4>
         </div>
       </div>
       <div id="right-reserved">
@@ -112,7 +212,8 @@ function Footer() {
           alt=""
         />
         <p>
-          © {new Date().getFullYear()} The Brain Take . All rights reserved.
+          © {new Date().getFullYear()} Psycortex Brain Take Mental Health Pvt.
+          Ltd. All rights reserved.
         </p>
         <ul>
           <Link>Private Policy</Link>
