@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 // import bg3 from "../../../public "/assets/Images/Home/service3.jpg ";
 
 function LandingPage() {
+  const whatsAppLink = 'https://wa.me/9270034937?text="" ';
+
   const titleArr = ["Mental Health", "Indian Psychology", "Drug De-Addiction"];
   const infoArry = [
     "Through personalized sessions with trained professionals, individuals can learn effective coping strategies to navigate the challenges of daily life. These sessions often involve identifying stressors, exploring underlying emotions, and developing practical techniques such as relaxation exercises, mindfulness, and cognitive restructuring.",
@@ -27,16 +29,21 @@ function LandingPage() {
   }, []);
 
   return (
-    <div
-      id="LandingPage"
-      style={{ background: `url(${bgArr[index]}) center/cover` }}
-    >
-      <div>
-        <h1>Psychological Therapy</h1>
-        <h2>{titleArr[index]}</h2>
-        <p>{infoArry[index]}</p>
+    <>
+      <div
+        id="LandingPage"
+        style={{ background: `url(${bgArr[index]}) center/cover` }}
+      >
+        <div>
+          <h1>Psychological Therapy</h1>
+          <h2>{titleArr[index]}</h2>
+          <p>{infoArry[index]}</p>
+        </div>
       </div>
-    </div>
+      <a href={whatsAppLink} id="whatsapp-logo" target="_blank">
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+    </>
   );
 }
 

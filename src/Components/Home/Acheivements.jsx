@@ -12,12 +12,12 @@ function Acheivements() {
           />
           <div>
             <p>
-              Dr. Vijay Dwivedi was proudly awarded a prestigious certificate by
-              WNHO INSTITUTE OF SEXOLOGY, recognizing his outstanding
-              achievement in completing Phd in Sexology and Psychosexual
-              Counselling. This accomplishment stands as a testament to Dr.
-              Dwivedi's dedication, expertise, and commitment to the field of
-              counseling.
+              Dr. Vijay Dwivedi was recently honored with a distinguished
+              certificate from the WNHO INSTITUTE OF SEXOLOGY, acknowledging his
+              remarkable accomplishment in earning a Ph.D. in Sexology and
+              Psychosexual Counseling. This achievement underscores Dr.
+              Dwivedi's unwavering dedication, profound expertise, and steadfast
+              commitment to the counseling domain.
             </p>
           </div>
         </div>
@@ -44,11 +44,12 @@ function Acheivements() {
           />
           <div>
             <p>
-              Dr. Vijay Dwivedi was proudly awarded a prestigious certificate by
-              Dega Institute and Clinevomedvidya, recognizing his outstanding
-              achievement in completing the Master Class in Clinical Sexology.
-              This accomplishment stands as a testament to Dr. Dwivedi's
-              dedication, expertise, and commitment to the field of counseling.
+              Dr. Vijay Dwivedi received a distinguished certificate from Dega
+              Institute and Clinevomedvidya, recognizing his remarkable
+              accomplishment in successfully completing the Master Class in
+              Clinical Sexology. This achievement underscores Dr. Dwivedi's
+              unwavering dedication, expertise, and commitment to the field of
+              counseling.
             </p>
           </div>
         </div>
@@ -59,12 +60,12 @@ function Acheivements() {
           />
           <div>
             <p>
-              Dr. Vijay Dwivedi was proudly awarded a prestigious certificate by
-              the International College of Teachers and Trainers, recognizing
-              his outstanding achievement in completing the rigorous Diploma in
-              Counseling. This accomplishment stands as a testament to Dr.
-              Dwivedi's dedication, expertise, and commitment to the field of
-              counseling.
+              Dr. Vijay Dwivedi was proudly honored with a prestigious
+              certificate by the International College of Teachers and Trainers,
+              acknowledging his exceptional achievement in completing the
+              rigorous Diploma in Counseling. This accomplishment is a testament
+              to Dr. Dwivedi's dedication, expertise, and unwavering commitment
+              to the counseling profession.
             </p>
           </div>
         </div>

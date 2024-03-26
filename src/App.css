@@ -34,6 +34,18 @@
   padding: 0%;
 }
 
+.fa-whatsapp {
+  position: fixed;
+  z-index: 70;
+  font-size: 2.5em;
+  padding: 15px;
+  border-radius: 100px;
+  background-color: green;
+  color: white;
+  bottom: 3%;
+  left: 3%;
+}
+
 #MobileNavbar {
   display: none;
 }
@@ -347,6 +359,9 @@
   color: black;
 }
 
+.uniqfooter {
+  font-size: 1em !important;
+}
 #right-reserved ul a {
   color: black;
   text-decoration: none;

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
+
 import "./Contact.css";
+import { useLocation } from "react-router-dom";
 
 function Contact() {
   const observedElements = useRef([]);
@@ -9,6 +11,7 @@ function Contact() {
       behavior: "smooth",
     });
   }, []);
+  const loc = useLocation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,19 +46,29 @@ function Contact() {
   return (
     <>
       <div className="Contact">
-        <h1 ref={(el) => observedElements.current.push(el)}>CONTACT US</h1>
+        <h1 ref={(el) => observedElements.current.push(el)}>
+          {loc.pathname === "/contactus" ? "CONTACT US" : "Get in Touch"}
+        </h1>
         <div>
           <div
             className="adress"
             ref={(el) => observedElements.current.push(el)}
           >
-            <h2>Get in Touch</h2>
+            <h2> {loc.pathname === "/contactus" ? "Get in Touch" : ""}</h2>
             <p>
-              Adress : Block no. 132, 2nd floor, Shriram Tower, Sadar, Nagpur-
-              440001, Maharashtra
+              <span>Address : </span>
+              Block no. 132, 2nd floor, Shriram Tower, Sadar, Nagpur- 440001,
+              Maharashtra
             </p>
-            <span>Phone no : 9270034937</span>
-            <span>Email : braintake@gmail.com</span>
+            <p>
+              {" "}
+              <span>Phone no : </span>9270034937
+            </p>
+            <p>
+              {" "}
+              <span>Email : </span>
+              braintake@gmail.com
+            </p>
 
             <div
               className="map"

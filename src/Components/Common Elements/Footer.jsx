@@ -78,7 +78,7 @@ function Footer() {
           </Link>
         </div>
         <h4>Services</h4>
-        <h4>Psychological Counseling</h4>
+        <h4 className="uniqfooter">Psychological Counseling</h4>
         <div>
           <Link to="/services/psychologicalcounselling/substanceabuseoraddictioncounselling">
             Substance Abuse or Addiction Counseling
@@ -132,7 +132,7 @@ function Footer() {
             Gestalt Therapy
           </Link>
         </div>
-        <h4>Sexology Counseling</h4>
+        <h4 className="uniqfooter">Sexology Counseling</h4>
         <div>
           <Link to="/services/sexologycounselling/erectiledysfunction">
             Erectile Dysfunction
@@ -172,7 +172,7 @@ function Footer() {
             Pelvic Floor Physical Therapy
           </Link>
         </div>
-        <h4>Psychological Testing</h4>
+        <h4 className="uniqfooter">Psychological Testing</h4>
         <div>
           <Link to="/services/psychologicaltesting/basiccounselling">
             Basic Counseling
