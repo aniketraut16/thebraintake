@@ -76,7 +76,15 @@ function BrainTakeForWho() {
           <p>{p1Arr[index]}</p>
           <p>{p2Arr[index]}</p>
         </div>
-        <video key={index} id="videoPlayer" autoPlay loop muted>
+        <video
+          key={index}
+          id="videoPlayer"
+          autoPlay
+          loop
+          muted
+          preload
+          playsInline
+        >
           <source src={imgArr[index]} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

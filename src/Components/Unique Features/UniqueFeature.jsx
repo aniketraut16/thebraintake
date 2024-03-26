@@ -111,6 +111,7 @@ function UniqueFeature() {
             </p>
           </div>
           <video
+            playsInline
             autoPlay
             loop
             muted
