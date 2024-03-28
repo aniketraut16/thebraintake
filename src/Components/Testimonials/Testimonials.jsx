@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Testimonial.css";
 import data from "./Testimonial.json";
+import OurGallery from "./OurGallery";
 
 function Testimonials() {
   const observedElements = useRef([]);
@@ -54,25 +55,39 @@ function Testimonials() {
   };
 
   return (
-    <div id="Testimonials">
-      <div className="header">
-        <h1>Testimonials</h1>
+    <>
+      <div id="Testimonials">
+        <div className="header">
+          <h1>Testimonials</h1>
+        </div>
+        <h1 ref={(el) => el && observedElements.current.push(el)}>
+          What Our Clients Say
+        </h1>
+        <h2>
+          <span
+            ref={(el) => el && observedElements.current.push(el)}
+            className="line"
+          ></span>
+          Clients's Review
+          <span className="line"></span>
+        </h2>
+        <div className="all-testimonialdiv">
+          {data.map((ele, index) => oneTestmonial(ele))}
+        </div>
+        <h1 ref={(el) => el && observedElements.current.push(el)}>
+          Our Gallery
+        </h1>
+        <h2>
+          <span
+            ref={(el) => el && observedElements.current.push(el)}
+            className="line"
+          ></span>
+          Our Memorable Moments
+          <span className="line"></span>
+        </h2>
       </div>
-      <h1 ref={(el) => el && observedElements.current.push(el)}>
-        What Our Clients Say
-      </h1>
-      <h2>
-        <span
-          ref={(el) => el && observedElements.current.push(el)}
-          className="line"
-        ></span>
-        Clients's Review
-        <span className="line"></span>
-      </h2>
-      <div className="all-testimonialdiv">
-        {data.map((ele, index) => oneTestmonial(ele))}
-      </div>
-    </div>
+      <OurGallery />
+    </>
   );
 }
 

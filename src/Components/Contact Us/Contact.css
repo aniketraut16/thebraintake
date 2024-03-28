@@ -28,7 +28,8 @@
   gap: 10px;
 }
 .adress p {
-  margin: 0px;
+  margin: 10px 0px;
+  padding-right: 15px;
 }
 .adress h3 {
   margin-top: 1em;

@@ -16,7 +16,7 @@ function Footer() {
           <a href="#">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/psycotex_pvt_ltd?igsh=MWlldWVreTRxbnJi">
             <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="#">
@@ -212,13 +212,12 @@ function Footer() {
           alt=""
         />
         <p>
-          © {new Date().getFullYear()} Psycortex Brain Take Mental Health Pvt.
-          Ltd. All rights reserved.
+          © {new Date().getFullYear()} Psycortex Pvt. Ltd. All rights reserved.
         </p>
         <ul>
-          <Link>Private Policy</Link>
-          <Link>Legal Notice</Link>
-          <Link>Report Security Issues</Link>
+          <Link to={"/psycortex/privacypolicy"}>Private Policy</Link>
+          <Link to={"/psycortex/termsandcondition"}>Terms & Conditions</Link>
+          <Link to={"/psycortex/returnpolicy"}>Return Policy</Link>
         </ul>
       </div>
     </div>

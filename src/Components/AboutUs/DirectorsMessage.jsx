@@ -55,7 +55,7 @@ function DirectorsMessage() {
               DR. VIJAY DWIVEDI
             </h1>
             <p ref={(el) => el && observedElements.current.push(el)}>
-              Director | Psycortex Brain Take Mental Health Pvt. Ltd.
+              Managing Director | Psycortex Pvt. Ltd.
             </p>
           </span>
           <bold ref={(el) => el && observedElements.current.push(el)}>
@@ -117,7 +117,7 @@ function DirectorsMessage() {
               DR. RASHMI SHUKLA
             </h1>
             <p ref={(el) => el && observedElements.current.push(el)}>
-              Director | Psycortex Brain Take Mental Health Pvt. Ltd.
+              Director | Psycortex Pvt. Ltd.
             </p>
           </span>
           <bold ref={(el) => el && observedElements.current.push(el)}>
@@ -125,10 +125,10 @@ function DirectorsMessage() {
           </bold>
           <p ref={(el) => el && observedElements.current.push(el)}>
             It is with great pleasure that I extend my warmest greetings to you
-            on behalf of Psycortex Brain Take Mental Health Pvt. Ltd. As the
-            Director of our esteemed organization, I am honored to lead a team
-            of passionate professionals dedicated to redefining the standards of
-            mental health care.
+            on behalf of Psycortex Pvt. Ltd. As the Director of our esteemed
+            organization, I am honored to lead a team of passionate
+            professionals dedicated to redefining the standards of mental health
+            care.
           </p>
           <p ref={(el) => el && observedElements.current.push(el)}>
             At Psycortex, we recognize the profound impact that mental

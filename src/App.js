@@ -16,6 +16,7 @@ import Blogs from "./Components/Blogs/Blogs.jsx";
 import Blog from "./Components/Blogs/Blog.jsx";
 import CaseStudies from "./Components/CaseStudy/CaseStudies.jsx";
 import CaseStudytemplate from "./Components/CaseStudy/CaseStudytemplate.jsx";
+import PolicyTemplate from "./Components/Policy/PolicyTemplate.jsx";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:section" element={<Blog />} />
+        <Route path="/psycortex/:section" element={<PolicyTemplate />} />
         <Route path="/casestudies" element={<CaseStudies />} />
         <Route path="/casestudy/:section" element={<CaseStudytemplate />} />
         <Route path="/contactus" element={<Contact />} />

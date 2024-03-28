@@ -55,10 +55,25 @@ function Contact() {
             ref={(el) => observedElements.current.push(el)}
           >
             <h2> {loc.pathname === "/contactus" ? "Get in Touch" : ""}</h2>
+            <h2>Nagpur</h2>
             <p>
               <span>Address : </span>
-              Block no. 132, 2nd floor, Shriram Tower, Sadar, Nagpur- 440001,
-              Maharashtra
+              Block no. 101/102, 2nd floor, Shriram Tower, Sadar, Nagpur-
+              440001, Maharashtra
+            </p>
+            <h2>Pune</h2>
+            <p>
+              <span>Address : </span>
+              Block no. 214 2nd Floor , 93 Avenue Mall,Bhagwan Tatyasaheb Kawade
+              Rd, Fatima Nagar , RSPF , Wanowrie , Pune , Maharashtra 411022
+            </p>
+            <p>
+              <h2>Indore</h2>
+              <p>
+                <span>Address : </span>
+                114 , AB Road , Near PATEL MOTORS , Part II , Scheme No 114,
+                Indore , Madhya Pradesh 452010
+              </p>
             </p>
             <p>
               {" "}
@@ -67,7 +82,7 @@ function Contact() {
             <p>
               {" "}
               <span>Email : </span>
-              braintake@gmail.com
+              psycortex01@gmail.com
             </p>
 
             <div

@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import bg1 from "../../../public "/assets/Images/Home/service1.webp";
-// import bg2 from "../../../public "/assets/Images/Home/service2.png ";
-// import bg3 from "../../../public "/assets/Images/Home/service3.jpg ";
-
 function LandingPage() {
   const whatsAppLink = 'https://wa.me/9270034937?text="" ';
 

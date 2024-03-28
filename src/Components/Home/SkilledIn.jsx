@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-// import skilledimg1 from "../../../public/assets/Images/Home/skilledIn2.jpg";
-
 function SkilledIn() {
   const [index, setindex] = useState(0);
   const skilledInRef = useRef(null);

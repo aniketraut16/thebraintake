@@ -1,6 +1,4 @@
 import React from "react";
-// import thebraintake from "../../../public/assets/Images/Home/THE BRAIN TAKE.png";
-
 function TheBrainTake() {
   return (
     <div id="wecare">
